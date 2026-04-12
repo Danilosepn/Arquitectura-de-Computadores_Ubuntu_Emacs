@@ -5,8 +5,8 @@
 #+options: tasks:t tex:t timestamp:t title:t toc:nil todo:t |:t
 #+title: Taller de Configuracion de Entorno WSL
 #+date: 2026-04-11
-#+author: Danilo Unapucha, Michael Sornoza, Martin Arevalo
-#+email: danilo.unapucha@epn.edu.ec
+#+author: Danilo Unapucha, Michael Sornoza, Martin Arevalo, Matías Palomeque
+#+email: danilo.unapucha@epn.edu.ec, , ,matias.palomeque@epn.edu.ec
 #+language: Espanol
 #+select_tags: export
 #+exclude_tags: noexport
@@ -36,6 +36,16 @@ Danilo Unapucha
 | C-l     | Me ayuda a ver de mejor manera el texto ya que me lo pone arriba o en la mitad o abajo            | C-k     | Ayuda mucho al poder elimar toda la linea en la que me encuetro                              |
 | M-k     | Este elimina toda una oracion y ayuda bastante al eliminar todo un parrafo si no se esta conforme | C-g     | Este es el mas importante ya que cierra el minibuffer o el comando para sacarnos de un apuro |
 aqui va lo suyo michae sebas y otro
+
+
+
+
+Matias Palomeque
+| Comando | Descripción                                                   | Comando | Descripción                                                                                        |
+|---------+---------------------------------------------------------------+---------+----------------------------------------------------------------------------------------------------|
+| C-n     | Avanza una línea. Permite buscar información de manera rápida | C-v     | Avanza una página. Permite leer un texto de manera más rápida                                      |
+| M-e     | Mueve al cursor al inicio de la siguiente oración             | C-u     | Permite darle un parámetro numérico a ciertos comandos. Útil para evitar repecticiones de comandos |
+
 ** Comandos Emacs Juego
 Danilo Unapucha
 | Iteracion | Puntaje |
@@ -55,19 +65,20 @@ lo suyo
 1. **Danilo Unapucha** C-n. Move cursor vertically down ARG lines.
 2. siguiente persona
 3. 
-4. 
+4. **Matias Palomeque** M-f. Move point forward ARG words (backward if ARG is negative).
 **Comandos Dificiles**
 1. **Danilo Unapucha** C-v. Scroll text of selected window upward ARG lines; or near full screen if no ARG.
 2. 
 3. 
-4. 
+4. **Matias Palomeque** C-/. Undo some previous changes.
 ** Equipo de Trabajo
-| Nombre          | email                      | Rol         |
-|-----------------+----------------------------+-------------|
-| Danilo Unapucha | danilo.unapucha@epn.edu.ec | Colaborador |
-|                 |                            |             |
-|                 |                            |             |
-|                 |                            |             |
+| Nombre           | email                       | Rol         |
+|------------------+-----------------------------+-------------|
+| Danilo Unapucha  | danilo.unapucha@epn.edu.ec  | Colaborador |
+|                  |                             |             |
+|                  |                             |             |
+| Matías Palomeque | matias.palomeque@epn.edu.ec | Colaborador |
+|                  |                             |             |
 ** Verificación de Entregables
 - [ ] Verificación de configuración de entorno WSL y paquetes del curso.
 - [ ] Tutorial de Comandos Emacs realizado.
