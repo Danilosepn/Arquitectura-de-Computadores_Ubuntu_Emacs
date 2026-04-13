@@ -13,7 +13,7 @@
 #+creator: Emacs 27.1 (Org mode 9.7.5)
 * Actividades
 ** Configuración de WSL con Ubuntu, LaTeX, Python e Emacs
-
+Danilo Unapucha
 1. Verificación de entorno mamba/anaconda
 #+caption: Evidencia de la configuración de Mamba Info en WSL
 [[./images/mamba.png]]
@@ -91,7 +91,7 @@ Matías Palomeque
 ** Equipo de Trabajo
 | Nombre           | email                       | Rol         |
 |------------------+-----------------------------+-------------|
-| Danilo Unapucha  | danilo.unapucha@epn.edu.ec  | Colaborador |
+| Danilo Unapucha  | danilo.unapucha@epn.edu.ec  | Lider       |
 |                  |                             |             |
 |                  |                             |             |
 | Matías Palomeque | matias.palomeque@epn.edu.ec | Colaborador |
