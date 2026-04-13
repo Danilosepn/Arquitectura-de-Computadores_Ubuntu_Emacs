@@ -41,10 +41,12 @@ aqui va lo suyo michae sebas y otro
 
 
 Matias Palomeque
-| Comando | Descripción                                                   | Comando | Descripción                                                                                        |
-|---------+---------------------------------------------------------------+---------+----------------------------------------------------------------------------------------------------|
-| C-n     | Avanza una línea. Permite buscar información de manera rápida | C-v     | Avanza una página. Permite leer un texto de manera más rápida                                      |
-| M-e     | Mueve al cursor al inicio de la siguiente oración             | C-u     | Permite darle un parámetro numérico a ciertos comandos. Útil para evitar repecticiones de comandos |
+| Comando | Descripción                                                   |
+|---------+---------------------------------------------------------------|
+| C-n     | Avanza una línea. Permite buscar información de manera rápida |
+| M-e     | Mueve al cursor al inicio de la siguiente oración             |
+| C-v     | Avanza una página. Permite leer un texto de manera más rápida |
+| C-u     | Permite darle un parámetro numérico a ciertos comandos.       |
 
 ** Comandos Emacs Juego
 Danilo Unapucha
@@ -60,6 +62,21 @@ Danilo Unapucha
 3. Iteracion 3
    [[./images/juego3.png]]
 lo suyo
+
+Matías Palomeque
+| Iteración | Puntaje |
+|-----------+---------|
+|         1 |     128 |
+|         2 |     128 |
+|         3 |     140 |
+
+1. Iteración 1
+   [[./images/juego10.png]]
+2. Iteración 2
+   [[./images/juego11.png]]
+3. Iteración 3
+  [[./images/juego12.png]]
+   
 ** Usando Emacs para tener Ayuda sobre Emacs
 **Comandos Fáciles**
 1. **Danilo Unapucha** C-n. Move cursor vertically down ARG lines.
