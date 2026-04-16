@@ -12,7 +12,7 @@
 #+exclude_tags: noexport
 #+creator: Emacs 27.1 (Org mode 9.7.5)
 * Actividades
-** Configuración de WSL con Ubuntu, LaTeX, Python e Emacs
+** Configuración de WSL con Ubuntu, LaTeX, Python e Emacs 
 Danilo Unapucha
 1. Verificación de entorno mamba/anaconda
 #+caption: Evidencia de la configuración de Mamba Info en WSL
@@ -29,39 +29,15 @@ Danilo Unapucha
 4. Verificación de LaTeX
 #+caption: Compilador LaTeX
 [[./images/latex.png]]
-
-Sebastian Arevalo
-1. Verificación de entorno mamba/anaconda
-#+caption: Evidencia de la configuración de MambaInfo en WSL
-[[./images/mamba_Info_Sebas.png]]
-
-2. Verificación de Python
-#+caption: Versión de Python 3
-[[./images/python_Info_Sebas.png]]
-
-3. Verificación de Emacs
-#+caption: Versión de Emacs ejecutándose en modo ventana/terminal
-[[./images/emacs_Info_Sebas.png]]
-
-4. Verificación de LaTeX
-#+caption: Compilador LaTeX
-[[./images/Latex_info_Sebas.png]]
-
-
 ** Comandos emacs tutorial
 Danilo Unapucha
 | Comando | Descripción                                                                                       | Comando | Descripción                                                                                  |
 |---------+---------------------------------------------------------------------------------------------------+---------+----------------------------------------------------------------------------------------------|
 | C-l     | Me ayuda a ver de mejor manera el texto ya que me lo pone arriba o en la mitad o abajo            | C-k     | Ayuda mucho al poder elimar toda la linea en la que me encuetro                              |
 | M-k     | Este elimina toda una oracion y ayuda bastante al eliminar todo un parrafo si no se esta conforme | C-g     | Este es el mas importante ya que cierra el minibuffer o el comando para sacarnos de un apuro |
+aqui va lo suyo michae sebas y otro
 
-Sebastian Arevalo
-| Comando | Descripción                                                                                    | Comando | Descripción                                              |
-|---------+------------------------------------------------------------------------------------------------+---------+----------------------------------------------------------|
-| C-d     | Sirve para suprimir un caracter en el que estoy trabajando muy util en redaccion.              | M-w     | Permite tener la funcion de copiar texto seleccionado    |
-| C-a     | Es bastante util a la hora de origramar de manera en la que no debes buscar el inicio de linea | C-y     | Ayuda muchisimo al dar la funcion de pegar texto copiado |
 
-Michael Sornoza
 
 
 Matias Palomeque
@@ -85,20 +61,8 @@ Danilo Unapucha
    [[./images/juego2.png]]
 3. Iteracion 3
    [[./images/juego3.png]]
+lo suyo
 
-Sebastian Arevalo
-| Iteracion | Puntaje |
-|-----------+---------|
-|         1 |     130 |
-|         2 |     130 |
-|         3 |     125 |
-1. Iteracion 1
-   [[./images/Juego1_Sebas.png]]
-2. Iteracion 2
-   [[./images/Juego2_Sebas.png]]
-3. Iteracion 3
-   [[./images/Juego3_Sebas.png]]
-        
 Matías Palomeque
 | Iteración | Puntaje |
 |-----------+---------|
@@ -111,31 +75,27 @@ Matías Palomeque
 2. Iteración 2
    [[./images/juego11.png]]
 3. Iteración 3
-   [[./images/juego12.png]]
+  [[./images/juego12.png]]
    
 ** Usando Emacs para tener Ayuda sobre Emacs
 **Comandos Fáciles**
 1. **Danilo Unapucha** C-n. Move cursor vertically down ARG lines.
-2. **Sebastian Arevalo** C-x C-s Save currend buffer
+2. siguiente persona
 3. 
 4. **Matias Palomeque** M-f. Move point forward ARG words (backward if ARG is negative).
 **Comandos Dificiles**
 1. **Danilo Unapucha** C-v. Scroll text of selected window upward ARG lines; or near full screen if no ARG.
-2. **Sebastian Arevalo** C-k kill or remove de line where the cursor is at.
+2. 
 3. 
 4. **Matias Palomeque** C-/. Undo some previous changes.
 ** Equipo de Trabajo
-| Nombre            | email                       | Rol         |
-|-------------------+-----------------------------+-------------|
-| Danilo Unapucha   | danilo.unapucha@epn.edu.ec  | Lider       |
-|                   |                             |             |
-|                   |                             |             |
-| Matías Palomeque  | matias.palomeque@epn.edu.ec | Colaborador |
-|                   |                             |             |
-|                   |                             |             |
-| Sebastian Arevalo | martin.arevalo@epn.edu.ec   | Colaborador |
-
-
+| Nombre           | email                       | Rol         |
+|------------------+-----------------------------+-------------|
+| Danilo Unapucha  | danilo.unapucha@epn.edu.ec  | Lider       |
+|                  |                             |             |
+|                  |                             |             |
+| Matías Palomeque | matias.palomeque@epn.edu.ec | Colaborador |
+|                  |                             |             |
 ** Verificación de Entregables
 - [ ] Verificación de configuración de entorno WSL y paquetes del curso.
 - [ ] Tutorial de Comandos Emacs realizado.
@@ -144,4 +104,4 @@ Matías Palomeque
 - [ ] Verifique que estén los nombres de los integrantes del equipo e identificado el líder.
 - [ ] Revisión de ortografía con ispell en el buffer
 - [ ] Generación de Archivo PDF M-x org-latex-export-to-pdf
- 
+
