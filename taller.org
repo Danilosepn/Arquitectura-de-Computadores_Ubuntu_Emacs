@@ -37,8 +37,8 @@ Sebastian Arevalo
 
 2. Verificación de Python
 #+caption: Versión de Python 3
-[[./images/python_Info_Sebas.png
-]]
+[[./images/python_Info_Sebas.png]]
+
 3. Verificación de Emacs
 #+caption: Versión de Emacs ejecutándose en modo ventana/terminal
 [[./images/emacs_Info_Sebas.png]]
