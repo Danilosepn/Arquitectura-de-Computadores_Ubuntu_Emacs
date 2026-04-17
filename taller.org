@@ -64,6 +64,19 @@ Michael Sornoza
 #+caption: Compilador LaTeX
 [[./images/latex.michael.png]]
 
+Matías Palomeque
+1. Verificación de entorno mamba/anaconda
+#+caption: Evidencia de la configuración de MambaInfo en WSL
+[[./images/Entorno-Matias.png]]
+2. Verificación de Python
+#+caption: Versión de Python 3
+[[./images/Python-Matias.png]]
+3. Verificación de Emacs
+#+caption: Versión de Emacs ejecutándose en modo ventana/terminal
+[[./images/emacs-Matias.png]]
+4. Verificación de LaTeX
+#+caption: Compilador LaTeX
+[[./images/Latex-Matias.png]]
 ** Comandos emacs tutorial
 Danilo Unapucha
 | Comando | Descripción                                                                                       | Comando | Descripción                                                                                  |
