@@ -47,6 +47,22 @@ Sebastian Arevalo
 #+caption: Compilador LaTeX
 [[./images/Latex_info_Sebas.png]]
 
+Michael Sornoza
+1. Verificación de entorno mamba/anaconda
+#+caption: Evidencia de la configuración de MambaInfo en WSL
+[[./images/Mamba.michael.png]]
+
+2. Verificación de Python
+#+caption: Versión de Python 3
+[[./images/Python.michael.png]]
+
+3. Verificación de Emacs
+#+caption: Versión de Emacs ejecutándose en modo ventana/terminal
+[[./images/emacs.michael.png]]
+
+4. Verificación de LaTeX
+#+caption: Compilador LaTeX
+[[./images/latex.michael.png]]
 
 ** Comandos emacs tutorial
 Danilo Unapucha
@@ -63,6 +79,10 @@ Sebastian Arevalo
 
 Michael Sornoza
 
+| Comando   | Descripción                  | Comando | Descripción                                                   |
+|-----------+------------------------------+---------+---------------------------------------------------------------|
+| C-<SPACE> | Me ayuda a seleccionar texto | M-<     | Te regresa al principio del documento es como la tecla inicio |
+| C-x C-f   | Permite abrir un archivo     | C-x b   | Cambiar entre buffers                                         |
 
 Matias Palomeque
 | Comando | Descripción                                                   |
@@ -112,17 +132,32 @@ Matías Palomeque
    [[./images/juego11.png]]
 3. Iteración 3
    [[./images/juego12.png]]
+
+Michael Sornoza
+| Iteración | Puntaje |
+|-----------+---------|
+|         1 |     122 |
+|         2 |     140 |
+|         3 |     140 |
+
+1. Iteración 1
+   [[./images/juego1_michael.png]]
+2. Iteración 2
+   [[./images/juego2_michael.png]]
+3. Iteración
+   [[./images/juego3_michael.png]]
    
 ** Usando Emacs para tener Ayuda sobre Emacs
 **Comandos Fáciles**
 1. **Danilo Unapucha** C-n. Move cursor vertically down ARG lines.
 2. **Sebastian Arevalo** C-x C-s Save currend buffer
-3. 
+3. **Michael Sornoza** C-a. Runs the command org-beginning-of-line (found in org-mode-map).
 4. **Matias Palomeque** M-f. Move point forward ARG words (backward if ARG is negative).
+
 **Comandos Dificiles**
 1. **Danilo Unapucha** C-v. Scroll text of selected window upward ARG lines; or near full screen if no ARG.
 2. **Sebastian Arevalo** C-k kill or remove de line where the cursor is at.
-3. 
+3. **Michael Sornoza** C-u Runs the command universal-argument (found in global-map), which is an interactive native-compiled Lisp function in ‘simple.el’.
 4. **Matias Palomeque** C-/. Undo some previous changes.
 ** Equipo de Trabajo
 | Nombre            | email                       | Rol         |
@@ -134,6 +169,9 @@ Matías Palomeque
 |                   |                             |             |
 |                   |                             |             |
 | Sebastian Arevalo | martin.arevalo@epn.edu.ec   | Colaborador |
+|                   |                             |             |
+|                   |                             |             |
+| Michael Sornoza   | michael.sornoza@epn.edu.ec  | Colaborador |
 
 
 ** Verificación de Entregables
