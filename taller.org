@@ -6,7 +6,7 @@
 #+title: Taller de Configuracion de Entorno WSL
 #+date: 2026-04-11
 #+author: Danilo Unapucha, Michael Sornoza, Martin Arevalo, Matías Palomeque
-#+email: danilo.unapucha@epn.edu.ec, , ,matias.palomeque@epn.edu.ec
+#+email: danilo.unapucha@epn.edu.ec, martin.arevalo@epn.edu.ec, michael.sornoza@epn.edu.ec, matias.palomeque@epn.edu.ec
 #+language: Espanol
 #+select_tags: export
 #+exclude_tags: noexport
@@ -81,14 +81,14 @@ Matías Palomeque
 Danilo Unapucha
 | Comando | Descripción                                                                                       | Comando | Descripción                                                                                  |
 |---------+---------------------------------------------------------------------------------------------------+---------+----------------------------------------------------------------------------------------------|
-| C-l     | Me ayuda a ver de mejor manera el texto ya que me lo pone arriba o en la mitad o abajo            | C-k     | Ayuda mucho al poder elimar toda la linea en la que me encuetro                              |
-| M-k     | Este elimina toda una oracion y ayuda bastante al eliminar todo un parrafo si no se esta conforme | C-g     | Este es el mas importante ya que cierra el minibuffer o el comando para sacarnos de un apuro |
+| C-l     | Me ayuda a ver de mejor manera el texto ya que me lo pone arriba o en la mitad o abajo            | C-k     | Ayuda mucho al poder eliminar toda la linea en la que me encuentro                              |
+| M-k     | Este elimina toda una oración y ayuda bastante al eliminar todo un párrafo si no se esta conforme | C-g     | Este es el mas importante ya que cierra el minibuffer o el comando para sacarnos de un apuro |
 
 Sebastian Arevalo
 | Comando | Descripción                                                                                    | Comando | Descripción                                              |
 |---------+------------------------------------------------------------------------------------------------+---------+----------------------------------------------------------|
-| C-d     | Sirve para suprimir un caracter en el que estoy trabajando muy util en redaccion.              | M-w     | Permite tener la funcion de copiar texto seleccionado    |
-| C-a     | Es bastante util a la hora de origramar de manera en la que no debes buscar el inicio de linea | C-y     | Ayuda muchisimo al dar la funcion de pegar texto copiado |
+| C-d     | Sirve para suprimir un carácter en el que estoy trabajando muy útil en refacción.              | M-w     | Permite tener la función de copiar texto seleccionado    |
+| C-a     | Es bastante útil a la hora de programar de manera en la que no debes buscar el inicio de linea | C-y     | Ayuda muchísimo al dar la función de pegar texto copiado |
 
 Michael Sornoza
 
@@ -98,53 +98,39 @@ Michael Sornoza
 | C-x C-f   | Permite abrir un archivo     | C-x b   | Cambiar entre buffers                                         |
 
 Matias Palomeque
-| Comando | Descripción                                                   |
-|---------+---------------------------------------------------------------|
-| C-n     | Avanza una línea. Permite buscar información de manera rápida |
-| M-e     | Mueve al cursor al inicio de la siguiente oración             |
-| C-v     | Avanza una página. Permite leer un texto de manera más rápida |
-| C-u     | Permite darle un parámetro numérico a ciertos comandos.       |
+| Comando | Descripción                                                   | Comando | Descripción                                                   |
+|---------+---------------------------------------------------------------+---------+---------------------------------------------------------------|
+| C-n     | Avanza una línea. Permite buscar información de manera rápida | C-v     | Avanza una página. Permite leer un texto de manera más rápida |
+| M-e     | Mueve al cursor al inicio de la siguiente oración             | C-u     | Permite darle un parámetro numérico a ciertos comandos.       |
+
 
 ** Comandos Emacs Juego
 Danilo Unapucha
-| Iteracion | Puntaje |
+| Iteración | Puntaje |
 |-----------+---------|
 |         1 |     140 |
 |         2 |     140 |
 |         3 |     140 |
-1. Iteracion 1
+1. Iteración 1
    [[./images/juego1.png]]
-2. Iteracion 2
+2. Iteración 2
    [[./images/juego2.png]]
-3. Iteracion 3
+3. Iteración 3
    [[./images/juego3.png]]
 
 Sebastian Arevalo
-| Iteracion | Puntaje |
+| Iteración | Puntaje |
 |-----------+---------|
 |         1 |     130 |
 |         2 |     130 |
 |         3 |     125 |
-1. Iteracion 1
+1. Iteración 1
    [[./images/Juego1_Sebas.png]]
-2. Iteracion 2
+2. Iteración 2
    [[./images/Juego2_Sebas.png]]
-3. Iteracion 3
+3. Iteración 3
    [[./images/Juego3_Sebas.png]]
         
-Matías Palomeque
-| Iteración | Puntaje |
-|-----------+---------|
-|         1 |     128 |
-|         2 |     128 |
-|         3 |     140 |
-
-1. Iteración 1
-   [[./images/juego10.png]]
-2. Iteración 2
-   [[./images/juego11.png]]
-3. Iteración 3
-   [[./images/juego12.png]]
 
 Michael Sornoza
 | Iteración | Puntaje |
@@ -159,6 +145,21 @@ Michael Sornoza
    [[./images/juego2_michael.png]]
 3. Iteración
    [[./images/juego3_michael.png]]
+   
+Matías Palomeque
+| Iteración | Puntaje |
+|-----------+---------|
+|         1 |     128 |
+|         2 |     128 |
+|         3 |     140 |
+
+1. Iteración 1
+   [[./images/juego10.png]]
+2. Iteración 2
+   [[./images/juego11.png]]
+3. Iteración 3
+   [[./images/juego12.png]]
+   
    
 ** Usando Emacs para tener Ayuda sobre Emacs
 **Comandos Fáciles**
@@ -188,11 +189,11 @@ Michael Sornoza
 
 
 ** Verificación de Entregables
-- [ ] Verificación de configuración de entorno WSL y paquetes del curso.
-- [ ] Tutorial de Comandos Emacs realizado.
-- [ ] Captura de Imágenes y puntajes de Emacs Trainer App.
-- [ ] Usando Emacs para tener ayuda sobre Emacs
-- [ ] Verifique que estén los nombres de los integrantes del equipo e identificado el líder.
-- [ ] Revisión de ortografía con ispell en el buffer
-- [ ] Generación de Archivo PDF M-x org-latex-export-to-pdf
+- [X] Verificación de configuración de entorno WSL y paquetes del curso.
+- [X] Tutorial de Comandos Emacs realizado.
+- [X] Captura de Imágenes y puntajes de Emacs Trainer App.
+- [X] Usando Emacs para tener ayuda sobre Emacs
+- [X] Verifique que estén los nombres de los integrantes del equipo e identificado el líder.
+- [X] Revisión de ortografía con ispell en el buffer
+- [X] Generación de Archivo PDF M-x org-latex-export-to-pdf
  
