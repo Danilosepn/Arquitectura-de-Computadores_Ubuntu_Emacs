@@ -196,4 +196,6 @@ Matías Palomeque
 - [X] Verifique que estén los nombres de los integrantes del equipo e identificado el líder.
 - [X] Revisión de ortografía con ispell en el buffer
 - [X] Generación de Archivo PDF M-x org-latex-export-to-pdf
- 
+  
+** Problemas con la Tarea:
+- Tarea X7 no se genero de la mejor manera debido a que dentro del documento pdf no se ponen bien los índices y las imágenes no se ponen de la mejor manera 
