@@ -15,68 +15,72 @@
 ** Configuración de WSL con Ubuntu, LaTeX, Python e Emacs
 Danilo Unapucha
 1. Verificación de entorno mamba/anaconda
-#+caption: Evidencia de la configuración de Mamba Info en WSL
-[[./images/mamba.png]]
+#+begin_src bash :results output
+mamba --version || conda --version
+#+end_src
+
+#+RESULTS:
+: 2.5.0
 
 2. Verificación de Python
-#+caption: Versión de Python 3
-[[./images/python.png]]
+#+begin_src bash :results output
+python3 --version
+#+end_src
+
+#+RESULTS:
+: Python 3.14.4
 
 3. Verificación de Emacs
-#+caption: Versión de Emacs ejecutándose en modo ventana/terminal
-[[./images/emacs.png]]
+#+begin_src bash :results output
+emacs --version | head -n 1
+#+end_src
+
+#+RESULTS:
+: GNU Emacs 29.3
 
 4. Verificación de LaTeX
-#+caption: Compilador LaTeX
-[[./images/latex.png]]
+#+begin_src bash :results output
+pdflatex --version | head -n 1
+#+end_src
+
+#+RESULTS:
+: pdfTeX 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian)
 
 Sebastian Arevalo
 1. Verificación de entorno mamba/anaconda
-#+caption: Evidencia de la configuración de MambaInfo en WSL
-[[./images/mamba_Info_Sebas.png]]
+
 
 2. Verificación de Python
-#+caption: Versión de Python 3
-[[./images/python_Info_Sebas.png]]
+
 
 3. Verificación de Emacs
-#+caption: Versión de Emacs ejecutándose en modo ventana/terminal
-[[./images/emacs_Info_Sebas.png]]
+
 
 4. Verificación de LaTeX
-#+caption: Compilador LaTeX
-[[./images/Latex_info_Sebas.png]]
+
 
 Michael Sornoza
 1. Verificación de entorno mamba/anaconda
-#+caption: Evidencia de la configuración de MambaInfo en WSL
-[[./images/Mamba.michael.png]]
+
 
 2. Verificación de Python
-#+caption: Versión de Python 3
-[[./images/Python.michael.png]]
+
 
 3. Verificación de Emacs
-#+caption: Versión de Emacs ejecutándose en modo ventana/terminal
-[[./images/emacs.michael.png]]
+
 
 4. Verificación de LaTeX
-#+caption: Compilador LaTeX
-[[./images/latex.michael.png]]
+
 
 Matías Palomeque
 1. Verificación de entorno mamba/anaconda
-#+caption: Evidencia de la configuración de MambaInfo en WSL
-[[./images/Entorno-Matias.png]]
+
 2. Verificación de Python
-#+caption: Versión de Python 3
-[[./images/Python-Matias.png]]
+
 3. Verificación de Emacs
-#+caption: Versión de Emacs ejecutándose en modo ventana/terminal
-[[./images/emacs-Matias.png]]
+
 4. Verificación de LaTeX
-#+caption: Compilador LaTeX
-[[./images/Latex-Matias.png]]
+
 ** Comandos emacs tutorial
 Danilo Unapucha
 | Comando | Descripción                                                                                       | Comando | Descripción                                                                                  |
