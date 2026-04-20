@@ -46,45 +46,45 @@ Danilo Unapucha
 
 2. Verificación de Python
  #+begin_src shell :exports both :results verbatim
-python3 --version
-#+end_src
+ python3 --version
+ #+end_src
 
-#+RESULTS:
-: Python 3.14.4
+ #+RESULTS:
+ : Python 3.14.4
 
 3. Verificación de Emacs
  #+begin_src shell :exports both :results verbatim
-emacs --version 
-#+end_src
+ emacs --version 
+ #+end_src
 
-#+RESULTS:
-: GNU Emacs 29.3
-: Copyright (C) 2024 Free Software Foundation, Inc.
-: GNU Emacs comes with ABSOLUTELY NO WARRANTY.
-: You may redistribute copies of GNU Emacs
-: under the terms of the GNU General Public License.
-: For more information about these matters, see the file named COPYING.
-
+ #+RESULTS:
+ : GNU Emacs 29.3
+ : Copyright (C) 2024 Free Software Foundation, Inc.
+ : GNU Emacs comes with ABSOLUTELY NO WARRANTY.
+ : You may redistribute copies of GNU Emacs
+ : under the terms of the GNU General Public License.
+ : For more information about these matters, see the file named COPYING.
+ 
 4. Verificación de LaTeX
  #+begin_src shell :exports both :results verbatim
-latex --version
-#+end_src
-
-#+RESULTS:
-#+begin_example
-pdfTeX 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian)
-kpathsea version 6.3.5
-Copyright 2023 Han The Thanh (pdfTeX) et al.
-There is NO warranty.  Redistribution of this software is
-covered by the terms of both the pdfTeX copyright and
-the Lesser GNU General Public License.
-For more information about these matters, see the file
-named COPYING and the pdfTeX source.
-Primary author of pdfTeX: Han The Thanh (pdfTeX) et al.
-Compiled with libpng 1.6.43; using libpng 1.6.43
-Compiled with zlib 1.3; using zlib 1.3
-Compiled with xpdf version 4.04
-#+end_example
+ latex --version
+ #+end_src
+ 
+ #+RESULTS:
+ #+begin_example
+ pdfTeX 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian)
+ kpathsea version 6.3.5
+ Copyright 2023 Han The Thanh (pdfTeX) et al.
+ There is NO warranty.  Redistribution of this software is
+ covered by the terms of both the pdfTeX copyright and
+ the Lesser GNU General Public License.
+ For more information about these matters, see the file
+ named COPYING and the pdfTeX source.
+ Primary author of pdfTeX: Han The Thanh (pdfTeX) et al.
+ Compiled with libpng 1.6.43; using libpng 1.6.43
+ Compiled with zlib 1.3; using zlib 1.3
+ Compiled with xpdf version 4.04
+ #+end_example
 
 Sebastian Arevalo
 1. Verificación de entorno mamba/anaconda
@@ -200,45 +200,45 @@ Matías Palomeque
    
 2. Verificación de Python
  #+begin_src shell :exports both :results verbatim
-python3 --version
-#+end_src
+ python3 --version
+ #+end_src
 
-#+RESULTS:
-: Python 3.11.15
+ #+RESULTS:
+ : Python 3.11.15
 
 3. Verificación de Emacs
  #+begin_src shell :exports both :results verbatim
-emacs --version 
-#+end_src
-
-#+RESULTS:
-: GNU Emacs 29.3
-: Copyright (C) 2024 Free Software Foundation, Inc.
-: GNU Emacs comes with ABSOLUTELY NO WARRANTY.
-: You may redistribute copies of GNU Emacs
-: under the terms of the GNU General Public License.
-: For more information about these matters, see the file named COPYING.
+ emacs --version 
+ #+end_src
+ 
+ #+RESULTS:
+ : GNU Emacs 29.3
+ : Copyright (C) 2024 Free Software Foundation, Inc.
+ : GNU Emacs comes with ABSOLUTELY NO WARRANTY.
+ : You may redistribute copies of GNU Emacs
+ : under the terms of the GNU General Public License.
+ : For more information about these matters, see the file named COPYING.
 
 4. Verificación de LaTeX
  #+begin_src shell :exports both :results verbatim
-latex --version
-#+end_src
+ latex --version
+ #+end_src
 
-#+RESULTS:
-#+begin_example
-pdfTeX 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian)
-kpathsea version 6.3.5
-Copyright 2023 Han The Thanh (pdfTeX) et al.
-There is NO warranty.  Redistribution of this software is
-covered by the terms of both the pdfTeX copyright and
-the Lesser GNU General Public License.
-For more information about these matters, see the file
-named COPYING and the pdfTeX source.
-Primary author of pdfTeX: Han The Thanh (pdfTeX) et al.
-Compiled with libpng 1.6.43; using libpng 1.6.43
-Compiled with zlib 1.3; using zlib 1.3
-Compiled with xpdf version 4.04
-#+end_example
+ #+RESULTS:
+ #+begin_example
+ pdfTeX 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian)
+ kpathsea version 6.3.5
+ Copyright 2023 Han The Thanh (pdfTeX) et al.
+ There is NO warranty.  Redistribution of this software is
+ covered by the terms of both the pdfTeX copyright and
+ the Lesser GNU General Public License.
+ For more information about these matters, see the file
+ named COPYING and the pdfTeX source.
+ Primary author of pdfTeX: Han The Thanh (pdfTeX) et al.
+ Compiled with libpng 1.6.43; using libpng 1.6.43
+ Compiled with zlib 1.3; using zlib 1.3
+ Compiled with xpdf version 4.04
+ #+end_example
 
 ** Comandos emacs tutorial
 Danilo Unapucha
