@@ -45,7 +45,7 @@ Danilo Unapucha
    #+end_example
 
 2. Verificación de Python
-#+begin_src shell :exports both :results verbatim
+ #+begin_src shell :exports both :results verbatim
 python3 --version
 #+end_src
 
@@ -53,7 +53,7 @@ python3 --version
 : Python 3.14.4
 
 3. Verificación de Emacs
-#+begin_src shell :exports both :results verbatim
+ #+begin_src shell :exports both :results verbatim
 emacs --version 
 #+end_src
 
@@ -66,7 +66,7 @@ emacs --version
 : For more information about these matters, see the file named COPYING.
 
 4. Verificación de LaTeX
-#+begin_src shell :exports both :results verbatim
+ #+begin_src shell :exports both :results verbatim
 latex --version
 #+end_src
 
@@ -170,7 +170,7 @@ Michael Sornoza
 
 Matías Palomeque
 1. Verificación de entorno mamba/anaconda
-,#+begin_src shell :exports both :results verbatim
+ #+begin_src shell :exports both :results verbatim
      mamba info
     #+end_src
 
@@ -199,7 +199,7 @@ Matías Palomeque
    #+end_example
    
 2. Verificación de Python
-#+begin_src shell :exports both :results verbatim
+ #+begin_src shell :exports both :results verbatim
 python3 --version
 #+end_src
 
@@ -207,7 +207,7 @@ python3 --version
 : Python 3.11.15
 
 3. Verificación de Emacs
-#+begin_src shell :exports both :results verbatim
+ #+begin_src shell :exports both :results verbatim
 emacs --version 
 #+end_src
 
@@ -220,7 +220,7 @@ emacs --version
 : For more information about these matters, see the file named COPYING.
 
 4. Verificación de LaTeX
-#+begin_src shell :exports both :results verbatim
+ #+begin_src shell :exports both :results verbatim
 latex --version
 #+end_src
 
