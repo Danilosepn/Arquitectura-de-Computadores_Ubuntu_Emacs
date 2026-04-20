@@ -157,16 +157,24 @@ mamba info
 
 Michael Sornoza
 1. Verificación de entorno mamba/anaconda
-
+  #+begin_src shell :exports both :results verbatim
+  mamba info
+  #+end_src
 
 2. Verificación de Python
-
+ #+begin_src shell :exports both :results verbatim
+ python3 --version
+ #+end_src
 
 3. Verificación de Emacs
-
+ #+begin_src shell :exports both :results verbatim
+ emacs --version
+ #+end_src
 
 4. Verificación de LaTeX
-
+ #+begin_src shell :exports both :results verbatim
+ latex --version
+ #+end_src
 
 Matías Palomeque
 1. Verificación de entorno mamba/anaconda
