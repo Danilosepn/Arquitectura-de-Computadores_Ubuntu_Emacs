@@ -1,4 +1,4 @@
-% Created 2026-04-18 Sat 18:07
+% Created 2026-04-22 Wed 10:03
 % Intended LaTeX compiler: pdflatex
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
@@ -26,155 +26,308 @@
 
 \maketitle
 \section{Actividades}
-\label{sec:org8fff09b}
+\label{sec:orga53eeca}
 \subsection{Configuración de WSL con Ubuntu, \LaTeX{}, Python e Emacs}
-\label{sec:orgabdb9e5}
+\label{sec:orgea3eb80}
 Danilo Unapucha
 \begin{enumerate}
 \item Verificación de entorno mamba/anaconda
-\end{enumerate}
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=.9\linewidth]{./images/mamba.png}
-\caption{Evidencia de la configuración de Mamba Info en WSL}
-\end{figure}
+\begin{verbatim}
+     mamba info
+\end{verbatim}
 
-\begin{enumerate}
+\begin{verbatim}
+
+	  libmamba version : 2.5.0
+	     mamba version : 2.5.0
+	      curl version : libcurl/8.19.0 OpenSSL/3.6.1 zlib/1.3.2 zstd/1.5.7 libssh2/1.11.1 nghttp2/1.68.1 mit-krb5/1.22.2
+	libarchive version : libarchive 3.8.6 zlib/1.3.2 liblzma/5.8.2 bz2lib/1.0.8 liblz4/1.10.0 libzstd/1.5.7 liblzo2/2.10 openssl/3.5.5 libb2/bundled
+	  envs directories : /home/danilo/miniforge3/envs
+	     package cache : /home/danilo/miniforge3/pkgs
+			     /home/danilo/.mamba/pkgs
+	       environment : base (active)
+	      env location : /home/danilo/miniforge3
+	 user config files : /home/danilo/.mambarc
+    populated config files : /home/danilo/miniforge3/.condarc
+	  virtual packages : __unix=0=0
+			     __linux=6.6.87=0
+			     __glibc=2.39=0
+			     __archspec=1=x86_64_v4
+		  channels : https://conda.anaconda.org/conda-forge/linux-64
+			     https://conda.anaconda.org/conda-forge/noarch
+	  base environment : /home/danilo/miniforge3
+		  platform : linux-64
+\end{verbatim}
+
 \item Verificación de Python
-\end{enumerate}
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=.9\linewidth]{./images/python.png}
-\caption{Versión de Python 3}
-\end{figure}
+\begin{verbatim}
+ python3 --version
+\end{verbatim}
 
-\begin{enumerate}
+\begin{verbatim}
+Python 3.13.12
+\end{verbatim}
+
 \item Verificación de Emacs
-\end{enumerate}
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=.9\linewidth]{./images/emacs.png}
-\caption{Versión de Emacs ejecutándose en modo ventana/terminal}
-\end{figure}
+\begin{verbatim}
+ emacs --version 
+\end{verbatim}
 
-\begin{enumerate}
+\begin{verbatim}
+GNU Emacs 29.3
+Copyright (C) 2024 Free Software Foundation, Inc.
+GNU Emacs comes with ABSOLUTELY NO WARRANTY.
+You may redistribute copies of GNU Emacs
+under the terms of the GNU General Public License.
+For more information about these matters, see the file named COPYING.
+\end{verbatim}
+
 \item Verificación de \LaTeX{}
+\begin{verbatim}
+ latex --version
+\end{verbatim}
+
+\begin{verbatim}
+ pdfTeX 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian)
+ kpathsea version 6.3.5
+ Copyright 2023 Han The Thanh (pdfTeX) et al.
+ There is NO warranty.  Redistribution of this software is
+ covered by the terms of both the pdfTeX copyright and
+ the Lesser GNU General Public License.
+ For more information about these matters, see the file
+ named COPYING and the pdfTeX source.
+ Primary author of pdfTeX: Han The Thanh (pdfTeX) et al.
+ Compiled with libpng 1.6.43; using libpng 1.6.43
+ Compiled with zlib 1.3; using zlib 1.3
+ Compiled with xpdf version 4.04
+\end{verbatim}
 \end{enumerate}
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=.9\linewidth]{./images/latex.png}
-\caption{Compilador \LaTeX{}}
-\end{figure}
 
 Sebastian Arevalo
 \begin{enumerate}
 \item Verificación de entorno mamba/anaconda
-\end{enumerate}
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=.9\linewidth]{./images/mamba_Info_Sebas.png}
-\caption{Evidencia de la configuración de MambaInfo en WSL}
-\end{figure}
+\begin{verbatim}
+mamba info
+\end{verbatim}
 
-\begin{enumerate}
+\begin{verbatim}
+
+	libmamba version : 2.5.0
+	   mamba version : 2.5.0
+	    curl version : libcurl/8.19.0 OpenSSL/3.6.1 zlib/1.3.2 zstd/1.5.7 libssh2/1.11.1 nghttp2/1.68.1 mit-krb5/1.22.2
+      libarchive version : libarchive 3.8.6 zlib/1.3.2 liblzma/5.8.2 bz2lib/1.0.8 liblz4/1.10.0 libzstd/1.5.7 liblzo2/2.10 openssl/3.5.5 libb2/bundled
+	envs directories : /home/danilo/miniforge3/envs
+	   package cache : /home/danilo/miniforge3/pkgs
+			   /home/danilo/.mamba/pkgs
+	     environment : base (active)
+	    env location : /home/danilo/miniforge3
+       user config files : /home/danilo/.mambarc
+  populated config files : /home/danilo/miniforge3/.condarc
+	virtual packages : __unix=0=0
+			   __linux=6.6.87=0
+			   __glibc=2.39=0
+			   __archspec=1=x86_64_v4
+		channels : https://conda.anaconda.org/conda-forge/linux-64
+			   https://conda.anaconda.org/conda-forge/noarch
+	base environment : /home/danilo/miniforge3
+		platform : linux-64
+\end{verbatim}
 \item Verificación de Python
-\end{enumerate}
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=.9\linewidth]{./images/python_Info_Sebas.png}
-\caption{Versión de Python 3}
-\end{figure}
+\begin{verbatim}
+ python --version
+\end{verbatim}
 
-\begin{enumerate}
+\begin{verbatim}
+Python 3.13.12
+\end{verbatim}
 \item Verificación de Emacs
-\end{enumerate}
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=.9\linewidth]{./images/emacs_Info_Sebas.png}
-\caption{Versión de Emacs ejecutándose en modo ventana/terminal}
-\end{figure}
+\begin{verbatim}
+ emacs --version
+\end{verbatim}
 
-\begin{enumerate}
+\begin{verbatim}
+GNU Emacs 29.3
+Copyright (C) 2024 Free Software Foundation, Inc.
+GNU Emacs comes with ABSOLUTELY NO WARRANTY.
+You may redistribute copies of GNU Emacs
+under the terms of the GNU General Public License.
+For more information about these matters, see the file named COPYING.
+\end{verbatim}
 \item Verificación de \LaTeX{}
+\begin{verbatim}
+ latex --version
+\end{verbatim}
+
+\begin{verbatim}
+ pdfTeX 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian)
+ kpathsea version 6.3.5
+ Copyright 2023 Han The Thanh (pdfTeX) et al.
+ There is NO warranty.  Redistribution of this software is
+ covered by the terms of both the pdfTeX copyright and
+ the Lesser GNU General Public License.
+ For more information about these matters, see the file
+ named COPYING and the pdfTeX source.
+ Primary author of pdfTeX: Han The Thanh (pdfTeX) et al.
+ Compiled with libpng 1.6.43; using libpng 1.6.43
+ Compiled with zlib 1.3; using zlib 1.3
+ Compiled with xpdf version 4.04
+\end{verbatim}
 \end{enumerate}
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=.9\linewidth]{./images/Latex_info_Sebas.png}
-\caption{Compilador \LaTeX{}}
-\end{figure}
 
 Michael Sornoza
 \begin{enumerate}
 \item Verificación de entorno mamba/anaconda
+\begin{verbatim}
+  mamba info
+\end{verbatim}
+
+\begin{verbatim}
+
+	 libmamba version : 2.5.0
+	    mamba version : 2.5.0
+	     curl version : libcurl/8.19.0 OpenSSL/3.6.1 zlib/1.3.2 zstd/1.5.7 libssh2/1.11.1 nghttp2/1.68.1 mit-krb5/1.22.2
+       libarchive version : libarchive 3.8.6 zlib/1.3.2 liblzma/5.8.2 bz2lib/1.0.8 liblz4/1.10.0 libzstd/1.5.7 liblzo2/2.10 openssl/3.5.5 libb2/bundled
+	 envs directories : /home/danilo/miniforge3/envs
+	    package cache : /home/danilo/miniforge3/pkgs
+			    /home/danilo/.mamba/pkgs
+	      environment : base (active)
+	     env location : /home/danilo/miniforge3
+	user config files : /home/danilo/.mambarc
+   populated config files : /home/danilo/miniforge3/.condarc
+	 virtual packages : __unix=0=0
+			    __linux=6.6.87=0
+			    __glibc=2.39=0
+			    __archspec=1=x86_64_v4
+		 channels : https://conda.anaconda.org/conda-forge/linux-64
+			    https://conda.anaconda.org/conda-forge/noarch
+	 base environment : /home/danilo/miniforge3
+		 platform : linux-64
+\end{verbatim}
 \end{enumerate}
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=.9\linewidth]{./images/Mamba.michael.png}
-\caption{Evidencia de la configuración de MambaInfo en WSL}
-\end{figure}
+
+
 
 \begin{enumerate}
 \item Verificación de Python
-\end{enumerate}
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=.9\linewidth]{./images/Python.michael.png}
-\caption{Versión de Python 3}
-\end{figure}
+\begin{verbatim}
+ python3 --version
+\end{verbatim}
 
-\begin{enumerate}
+\begin{verbatim}
+Python 3.13.12
+\end{verbatim}
+
 \item Verificación de Emacs
-\end{enumerate}
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=.9\linewidth]{./images/emacs.michael.png}
-\caption{Versión de Emacs ejecutándose en modo ventana/terminal}
-\end{figure}
+\begin{verbatim}
+ emacs --version
+\end{verbatim}
 
-\begin{enumerate}
+\begin{verbatim}
+GNU Emacs 29.3
+Copyright (C) 2024 Free Software Foundation, Inc.
+GNU Emacs comes with ABSOLUTELY NO WARRANTY.
+You may redistribute copies of GNU Emacs
+under the terms of the GNU General Public License.
+For more information about these matters, see the file named COPYING.
+\end{verbatim}
+
 \item Verificación de \LaTeX{}
+\begin{verbatim}
+ latex --version
+\end{verbatim}
+
+\begin{verbatim}
+ pdfTeX 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian)
+ kpathsea version 6.3.5
+ Copyright 2023 Han The Thanh (pdfTeX) et al.
+ There is NO warranty.  Redistribution of this software is
+ covered by the terms of both the pdfTeX copyright and
+ the Lesser GNU General Public License.
+ For more information about these matters, see the file
+ named COPYING and the pdfTeX source.
+ Primary author of pdfTeX: Han The Thanh (pdfTeX) et al.
+ Compiled with libpng 1.6.43; using libpng 1.6.43
+ Compiled with zlib 1.3; using zlib 1.3
+ Compiled with xpdf version 4.04
+\end{verbatim}
 \end{enumerate}
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=.9\linewidth]{./images/latex.michael.png}
-\caption{Compilador \LaTeX{}}
-\end{figure}
 
 Matías Palomeque
 \begin{enumerate}
 \item Verificación de entorno mamba/anaconda
-\end{enumerate}
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=.9\linewidth]{./images/Entorno-Matias.png}
-\caption{Evidencia de la configuración de MambaInfo en WSL}
-\end{figure}
-\begin{enumerate}
+\begin{verbatim}
+     mamba info
+\end{verbatim}
+
+\begin{verbatim}
+
+	  libmamba version : 2.5.0
+	     mamba version : 2.5.0
+	      curl version : libcurl/8.19.0 OpenSSL/3.6.1 zlib/1.3.2 zstd/1.5.7 libssh2/1.11.1 nghttp2/1.68.1 mit-krb5/1.22.2
+	libarchive version : libarchive 3.8.6 zlib/1.3.2 liblzma/5.8.2 bz2lib/1.0.8 liblz4/1.10.0 libzstd/1.5.7 liblzo2/2.10 openssl/3.5.5 libb2/bundled
+	  envs directories : /home/danilo/miniforge3/envs
+	     package cache : /home/danilo/miniforge3/pkgs
+			     /home/danilo/.mamba/pkgs
+	       environment : base (active)
+	      env location : /home/danilo/miniforge3
+	 user config files : /home/danilo/.mambarc
+    populated config files : /home/danilo/miniforge3/.condarc
+	  virtual packages : __unix=0=0
+			     __linux=6.6.87=0
+			     __glibc=2.39=0
+			     __archspec=1=x86_64_v4
+		  channels : https://conda.anaconda.org/conda-forge/linux-64
+			     https://conda.anaconda.org/conda-forge/noarch
+	  base environment : /home/danilo/miniforge3
+		  platform : linux-64
+\end{verbatim}
+
 \item Verificación de Python
-\end{enumerate}
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=.9\linewidth]{./images/Python-Matias.png}
-\caption{Versión de Python 3}
-\end{figure}
-\begin{enumerate}
+\begin{verbatim}
+ python3 --version
+\end{verbatim}
+
+\begin{verbatim}
+Python 3.13.12
+\end{verbatim}
+
 \item Verificación de Emacs
-\end{enumerate}
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=.9\linewidth]{./images/emacs-Matias.png}
-\caption{Versión de Emacs ejecutándose en modo ventana/terminal}
-\end{figure}
-\begin{enumerate}
+\begin{verbatim}
+ emacs --version 
+\end{verbatim}
+
+\begin{verbatim}
+GNU Emacs 29.3
+Copyright (C) 2024 Free Software Foundation, Inc.
+GNU Emacs comes with ABSOLUTELY NO WARRANTY.
+You may redistribute copies of GNU Emacs
+under the terms of the GNU General Public License.
+For more information about these matters, see the file named COPYING.
+\end{verbatim}
+
 \item Verificación de \LaTeX{}
+\begin{verbatim}
+ latex --version
+\end{verbatim}
+
+\begin{verbatim}
+ pdfTeX 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian)
+ kpathsea version 6.3.5
+ Copyright 2023 Han The Thanh (pdfTeX) et al.
+ There is NO warranty.  Redistribution of this software is
+ covered by the terms of both the pdfTeX copyright and
+ the Lesser GNU General Public License.
+ For more information about these matters, see the file
+ named COPYING and the pdfTeX source.
+ Primary author of pdfTeX: Han The Thanh (pdfTeX) et al.
+ Compiled with libpng 1.6.43; using libpng 1.6.43
+ Compiled with zlib 1.3; using zlib 1.3
+ Compiled with xpdf version 4.04
+\end{verbatim}
 \end{enumerate}
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=.9\linewidth]{./images/Latex-Matias.png}
-\caption{Compilador \LaTeX{}}
-\end{figure}
+
 \subsection{Comandos emacs tutorial}
-\label{sec:orgd5aed0a}
+\label{sec:org5b925f7}
 Danilo Unapucha
 \begin{center}
 \begin{tabular}{llll}
@@ -218,7 +371,7 @@ M-e & Mueve al cursor al inicio de la siguiente oración & C-u & Permite darle u
 
 
 \subsection{Comandos Emacs Juego}
-\label{sec:orge92fb3c}
+\label{sec:org87a5460}
 Danilo Unapucha
 \begin{center}
 \begin{tabular}{rr}
@@ -324,7 +477,7 @@ Iteración & Puntaje\\[0pt]
 
 
 \subsection{Usando Emacs para tener Ayuda sobre Emacs}
-\label{sec:org6e5d45f}
+\label{sec:org708b40a}
 \textbf{\textbf{Comandos Fáciles}}
 \begin{enumerate}
 \item \textbf{\textbf{Danilo Unapucha}} C-n. Move cursor vertically down ARG lines.
@@ -341,7 +494,7 @@ Iteración & Puntaje\\[0pt]
 \item \textbf{\textbf{Matias Palomeque}} C-/. Undo some previous changes.
 \end{enumerate}
 \subsection{Equipo de Trabajo}
-\label{sec:org2c35952}
+\label{sec:org2274a0b}
 \begin{center}
 \begin{tabular}{lll}
 Nombre & email & Rol\\[0pt]
@@ -361,7 +514,7 @@ Michael Sornoza & michael.sornoza@epn.edu.ec & Colaborador\\[0pt]
 
 
 \subsection{Verificación de Entregables}
-\label{sec:org123f03c}
+\label{sec:orge592dc4}
 \begin{itemize}
 \item[{$\boxtimes$}] Verificación de configuración de entorno WSL y paquetes del curso.
 \item[{$\boxtimes$}] Tutorial de Comandos Emacs realizado.
@@ -370,11 +523,5 @@ Michael Sornoza & michael.sornoza@epn.edu.ec & Colaborador\\[0pt]
 \item[{$\boxtimes$}] Verifique que estén los nombres de los integrantes del equipo e identificado el líder.
 \item[{$\boxtimes$}] Revisión de ortografía con ispell en el buffer
 \item[{$\boxtimes$}] Generación de Archivo PDF M-x org-latex-export-to-pdf
-\end{itemize}
-
-\subsection{Problemas con la Tarea:}
-\label{sec:org1de9aea}
-\begin{itemize}
-\item Tarea X7 no se genero de la mejor manera debido a que dentro del documento pdf no se ponen bien los índices y las imágenes no se ponen de la mejor manera
 \end{itemize}
 \end{document}
