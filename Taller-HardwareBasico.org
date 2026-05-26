@@ -1,7 +1,7 @@
 
 #+TITLE: Taller - Conceptos Básicos de Hardware y Ensamblaje de Computadores
 #+SUBTITLE: ICCD332 Arquitectura de Computadores
-#+AUTHOR: Danilo Unapucha, , , y 
+#+AUTHOR: Danilo Unapucha, Michael Sornoza , , y 
 #+DATE: 2026-05-24
 #+OPTIONS: toc:nil num:t
 #+LANGUAGE: es
@@ -80,13 +80,11 @@ archivo usando ~C-c C-l~ o usando ~[[./carpeta-certificados/cert-int1.pdf]]~
       [[file:/home/danilo/talleres/images/TituloDanilo.pdf]]
      #+end_example
 2. *Integrante 2*
-   - *Nombre completo:*
-   - *Correo:*
-   - *Certificado adjunto:*
-
-     #+begin_src example
-      Siga las instrucciones para insertar la imagen usando YASnippet
-     #+end_src
+   - *Nombre completo:* Michael Sornoza
+   - *Correo:* michael.sornoza@epn.edu.ec
+   - *Certificado adjunto:* fig:certificado-integrante-2
+     #+ATTR_ORG: :width 400
+      [[/home/mick/Arquitectura-de-Computadores_Ubuntu_Emacs/images/Certificado_Michael.png]]
 3. *Integrante 3*
    - *Nombre completo:*
    - *Usuario institucional:*
@@ -128,10 +126,13 @@ Estudiante: Danilo Unapucha
   muy delicados y si no se ponen correctamente pueden llegar a
   romperse
 
-Estudiante: Danilo Unapucha
+Estudiante: Michael Sornoza 
 
-- /Alternativa escogida:/ [a completar]
-- /Justificación técnica:/ [a completar]
+- /Alternativa escogida:/ b
+- /Justificación técnica:/ El poner mal el orden de los pines ocasionaría que se dañen
+  los componentes electeónicos, porque cada pin lleva electricidad a un componente
+  diferente y se se le da un mal voltaje a un componente se puede dañar el componente
+  y en el peor de los casos varios circuitos. 
 
 Estudiante: Danilo Unapucha
 
@@ -164,10 +165,12 @@ Estudiante: Danilo Unapucha
   madre no toque con la tapa metálica de atrás para que los circuitos
   no toquen y no hagan cortocircuito 
 
-Estudiante: Danilo Unapucha
+Estudiante: Michael Sornoza
 
-- /Alternativa escogida:/ [a completar]
-- /Justificación técnica:/ [a completar]
+- /Alternativa escogida:/ b 
+- /Justificación técnica:/ De esta manera se protege los componentes del metal, esto se debe que en
+  la placa hay varios circuitos con componentes y soldadura que conducen electricidad y al tener contacto
+  con el metal ocasionaría un cortocircuito. 
 
 Estudiante: Danilo Unapucha
 
@@ -200,10 +203,12 @@ Estudiante: Danilo Unapucha
   disipadores ya vienen así y no hace falta poner mas pasta térmica si
   no seria un desperdicio
 
-Estudiante: Danilo Unapucha
+Estudiante: Michael Sornoza
 
-- /Alternativa escogida:/ [a completar]
-- /Justificación técnica:/ [a completar]
+- /Alternativa escogida:/ b
+- /Justificación técnica:/ La pasta térmica es escencial en un equipo porque ayuda a distribuir el calor
+  el único escenario en el que no se le aplica es cuando el dispostivo es nuevo y ya tiene aplicada
+  de fábrica la pasta, caso contrario siempre en un mantenimiento hay que aplicar la pasta térmica. 
 
 Estudiante: Danilo Unapucha
 
@@ -237,10 +242,12 @@ Estudiante: Danilo Unapucha
   es suficiente para quemarlo esto es lo que evita la pulsera y la
   alfombrilla mandado esta electricidad a tierra 
 
-Estudiante: Danilo Unapucha
+Estudiante: Michael Sornoza
 
-- /Alternativa escogida:/ [a completar]
-- /Justificación técnica:/ [a completar]
+- /Alternativa escogida:/ b
+- /Justificación técnica:/ La electricidad estática es un problema muy común y que involuntariamente las personas
+  sabemos producirlas y al transferir esa electricidad a los componenetes electrónicos más delicados pueden
+  dañarse, por eso la pulsera y la alfombra redirigen a tierra.  
 
 Estudiante: Danilo Unapucha
 
@@ -273,10 +280,12 @@ Estudiante: Danilo Unapucha
   lo general se conectan mal estos conectores al tener polaridad ya si
   después de esto sigue el mismo problema seria de preocuparse 
 
-Estudiante: Danilo Unapucha
+Estudiante: Michael Sornoza
 
-- /Alternativa escogida:/ [a completar]
-- /Justificación técnica:/ [a completar]
+- /Alternativa escogida:/ c
+- /Justificación técnica:/ Probablemente el LED no fue conectado correctamente y si bien es una mala
+  práctica  invertirlos resolvería el problema, lo ideal es ver el manual donde este el esquema para conectar bien los LED
+  en el curso mostraba un esquema que podiamos seguir para no tener errores. 
 
 Estudiante: Danilo Unapucha
 
@@ -309,10 +318,13 @@ Estudiante: Danilo Unapucha
   por eso se conecta directo a la fuente esto claro en GPUs de mas
   alta gama
 
-Estudiante: Danilo Unapucha
+Estudiante: Michael Sornoza
 
-- /Alternativa escogida:/ [a completar]
-- /Justificación técnica:/ [a completar]
+- /Alternativa escogida:/ b
+- /Justificación técnica:/ Las tarjetas gráficas actuales usualmente necesitan más energía de las que
+  da la ranura por eso se las conecta directo a la fuente de alimentación, además es un dato muy importante
+  escoger una buena fuente para que de la suficiente energia a todos los componentes que saben consumir
+  mucha energia por sus características como la GPU.
 
 Estudiante: Danilo Unapucha
 
@@ -343,16 +355,16 @@ Estudiante: Danilo Unapucha
    | Brocha Antiestática  | Remueve el polvo de zonas de la placa madre |
    | Paño Micro fibra      | Limpieza carcasas sin dejar pelusas         |
 
-Estudiante: Danilo Unapucha
+Estudiante: Michael Sornoza
    
-   | Insumo | Uso principal |
-   |--------+---------------|
-   |        |               |
-   |        |               |
-   |        |               |
-   |        |               |
-   |        |               |
-   |        |               |
+   | Insumo                     | Uso principal                                                                                 |
+   |----------------------------+-----------------------------------------------------------------------------------------------|
+   | Compartmientos y etiquetas | Cuando se quita los tornillos y piezas es recomendado clasificarlos y nombrarlos              |
+   | Espuma limpiadora          | Se aplica con un cepillo en los coolers para remover suciedad entre aspas                     |
+   | Cinta resistente al calor  | Se coloca entre los ventiladores y las alteas del disipador (aprovecha todo el fluje de aire) |
+   | Thermal Putty              | Se aplica sobre las memorias VRAM y sobre la VRM                                              |
+   | Aspiradora                 | Es una buena alternativa para extrer toda la suciedad en la carcasa                           |
+   | Alchol isopropilico        | Ayuda a limpirar la pasta sobrante, y suciedad alojada en componentes                              |
 
 Estudiante: Danilo Unapucha
    
@@ -408,9 +420,14 @@ Estudiante: Danilo Unapucha
      a la limpieza que le hago a mi laptop ya que antes no sabia lo de
      la pulsera antiestática
 
-** Integrante 2 [Nombre]
-   - *¿Qué conocimiento nuevo obtuvo del curso?* [Respuesta]
-   - *¿Qué concepto corrigió o clarificó?* [Respuesta]
+** Integrante 2 Michael Sornoza
+   - *¿Qué conocimiento nuevo obtuvo del curso?* Aprendí componentes de las
+     computadoras de escritorio, laptop, además aprendí sobre otros dispositivos
+     y sus usos como tablets, celulares inteligetes, relojs inteligentes. Lo
+     más importante que me enseñó el curso es sobre el mantenimiento (herramientas y medidas de seguridad)
+   - *¿Qué concepto corrigió o clarificó?* Las medidas de seguridad y la banda electroestática
+     son cosas que no sabía y si hubiera hecho mantenimiento a mi laptop probablemente
+     hubiera dañado agún componente. 
 
 ** Integrante 3 [Nombre]
    - *¿Qué conocimiento nuevo obtuvo del curso?* [Respuesta]
