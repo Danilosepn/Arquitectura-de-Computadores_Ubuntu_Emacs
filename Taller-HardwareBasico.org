@@ -79,12 +79,15 @@ archivo usando ~C-c C-l~ o usando ~[[./carpeta-certificados/cert-int1.pdf]]~
       #+label: fig:certificado-integrante-1
       [[file:/home/danilo/talleres/images/TituloDanilo.pdf]]
      #+end_example
-2. *Integrante 2*
-   - *Nombre completo:* Michael Sornoza
-   - *Correo:* michael.sornoza@epn.edu.ec
-   - *Certificado adjunto:* fig:certificado-integrante-2
-     #+ATTR_ORG: :width 400
-      [[/home/mick/Arquitectura-de-Computadores_Ubuntu_Emacs/images/Certificado_Michael.png]]
+2. Integrante 2
+   - Nombre completo: Michael Sornoza
+   - Correo: michael.sornoza@epn.edu.ec
+   - Certificado adjunto:
+
+#+caption: Certificado de Aprobación - Michael Sornoza
+#+attr_latex: :width 0.75\textwidth :center t
+#+label: fig:certificado-integrante 2
+[[./images/Certificado_Michael.png]]
 3. *Integrante 3*
    - *Nombre completo:*
    - *Usuario institucional:*
