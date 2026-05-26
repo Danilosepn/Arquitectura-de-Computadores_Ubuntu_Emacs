@@ -79,6 +79,7 @@ archivo usando ~C-c C-l~ o usando ~[[./carpeta-certificados/cert-int1.pdf]]~
       #+label: fig:certificado-integrante-1
       [[file:/home/danilo/talleres/images/TituloDanilo.pdf]]
      #+end_example
+     
 2. Integrante 2
    - Nombre completo: Michael Sornoza
    - Correo: michael.sornoza@epn.edu.ec
@@ -88,14 +89,19 @@ archivo usando ~C-c C-l~ o usando ~[[./carpeta-certificados/cert-int1.pdf]]~
 #+attr_latex: :width 0.75\textwidth :center t
 #+label: fig:certificado-integrante 2
 [[./images/Certificado_Michael.png]]
+
 3. *Integrante 3*
-   - *Nombre completo:*
-   - *Usuario institucional:*
-   - *Correo:*
-   - *Certificado adjunto:* (sí / no)
-     #+begin_src example
-      Siga las instrucciones para insertar la imagen usando YASnippet
-     #+end_src
+   - *Nombre completo:* Matías Palomeque
+   - *Correo:* matias.palomeque@epn.edu.ec
+   - *Certificado Adjunto*
+
+     #+begin_example
+     #+caption: caption
+     #+attr_latex: scale=0.75
+     #+label: fig:Certificado-Integrante-3
+     [[./images/CertificadoIntegrante3.pdf]]
+     #+end_example
+
      
 * Parte B. Cuestionario argumentado grupal
 
@@ -137,10 +143,13 @@ Estudiante: Michael Sornoza
   diferente y se se le da un mal voltaje a un componente se puede dañar el componente
   y en el peor de los casos varios circuitos. 
 
-Estudiante: Danilo Unapucha
+Estudiante: Matías Palomeque
 
-- /Alternativa escogida:/ [a completar]
-- /Justificación técnica:/ [a completar]
+- /Alternativa escogida:/ b
+- /Justificación técnica:/ Los pines tienen un orden específico, ya
+  que garantizan que cada componente reciba la cantidad de corriente
+  y/o voltaje necesaria. Ingresarlos en otro orden del establecido
+  podría generar cortocircuitos.
 
 Estudiante: Danilo Unapucha
 
@@ -175,10 +184,13 @@ Estudiante: Michael Sornoza
   la placa hay varios circuitos con componentes y soldadura que conducen electricidad y al tener contacto
   con el metal ocasionaría un cortocircuito. 
 
-Estudiante: Danilo Unapucha
+Estudiante: Matías Palomeque
 
-- /Alternativa escogida:/ [a completar]
-- /Justificación técnica:/ [a completar]
+- /Alternativa escogida:/ b
+- /Justificación técnica:/ Los separadores evitan el contacto  entre
+  la placa madre y el metal del gabinete, ya que el metal puede
+  conducir electricidad. Esto podría ocasionar que exista un
+  cortocircuito en la placa madre y la dañe completamente.
 
 Estudiante: Danilo Unapucha
 
@@ -203,8 +215,7 @@ Estudiante: Danilo Unapucha
 
 - /Alternativa escogida:/ b
 - /Justificación técnica:/ En la actualidad ya la mayoría de
-  disipadores ya vienen así y no hace falta poner mas pasta térmica si
-  no seria un desperdicio
+  disipadores ya vienen así y no hace falta poner mas pasta térmica sino seria un desperdicio
 
 Estudiante: Michael Sornoza
 
@@ -213,9 +224,13 @@ Estudiante: Michael Sornoza
   el único escenario en el que no se le aplica es cuando el dispostivo es nuevo y ya tiene aplicada
   de fábrica la pasta, caso contrario siempre en un mantenimiento hay que aplicar la pasta térmica. 
 
-Estudiante: Danilo Unapucha
+Estudiante: Matías Palomeque
 
-- /Alternativa escogida:/ [a completar]
+- /Alternativa escogida:/ La pasta térmica ayuda a distrubuir
+  correctamente el calor y evita que los componentes se
+  sobrecalienten. Es necesario colocarla siempre, excepto cuando el
+  disipador ya tiene pasta térmica aplicada, ya que el exceso de pasta
+  podría hacer que haya errores en la aplicación y podrían existir problemas.
 - /Justificación técnica:/ [a completar]
 
 Estudiante: Danilo Unapucha
@@ -252,10 +267,16 @@ Estudiante: Michael Sornoza
   sabemos producirlas y al transferir esa electricidad a los componenetes electrónicos más delicados pueden
   dañarse, por eso la pulsera y la alfombra redirigen a tierra.  
 
-Estudiante: Danilo Unapucha
+Estudiante: Matías Palomeque
 
-- /Alternativa escogida:/ [a completar]
-- /Justificación técnica:/ [a completar]
+- /Alternativa escogida: b
+- /Justificación técnica:/ Nuestro cuerpo tiende a acumular
+  electricidad estática al solo frotar cosas que conducen la
+  electricidad. Si bien no es mucho voltaje, los componentes de la PC
+  son sumamente frágiles, y pueden dañarse con voltajes tan pequeños
+  como 20V. Una pulsera antiestática ayuda a evitar que conduzcamos
+  electricidad estática y así poder manejar componentes delicados sin
+  peligro de dañarlos.
 
 Estudiante: Danilo Unapucha
 
@@ -290,10 +311,13 @@ Estudiante: Michael Sornoza
   práctica  invertirlos resolvería el problema, lo ideal es ver el manual donde este el esquema para conectar bien los LED
   en el curso mostraba un esquema que podiamos seguir para no tener errores. 
 
-Estudiante: Danilo Unapucha
+Estudiante: Matías Palomeque
 
-- /Alternativa escogida:/ [a completar]
-- /Justificación técnica:/ [a completar]
+- /Alternativa escogida:/ c
+- /Justificación técnica:/ El LED del panel frontal en una PC tiene
+  polaridad, por lo que si no funciona, lo más probable es que esté
+  conectado en sentido contrario. Es por esto, que es recomendable
+  invertir las conexiones y volver a probar.
 
 Estudiante: Danilo Unapucha
 
@@ -329,10 +353,14 @@ Estudiante: Michael Sornoza
   escoger una buena fuente para que de la suficiente energia a todos los componentes que saben consumir
   mucha energia por sus características como la GPU.
 
-Estudiante: Danilo Unapucha
+Estudiante: Matías Palomeque
 
-- /Alternativa escogida:/ [a completar]
-- /Justificación técnica:/ [a completar]
+- /Alternativa escogida:/ b
+- /Justificación técnica:/ La ranura PCIe de la placa madre puede
+  suministrar una cantidad de energía limitada, pero las tarjetas
+  gráficas más actuales utilizan más potencia de la que pueden
+  suministrar. Es por esto que pueden requerir un conector extra, así
+  puede funcionar correctamente y cumplir todas sus funciones
 
 Estudiante: Danilo Unapucha
 
@@ -369,16 +397,17 @@ Estudiante: Michael Sornoza
    | Aspiradora                 | Es una buena alternativa para extrer toda la suciedad en la carcasa                           |
    | Alchol isopropilico        | Ayuda a limpirar la pasta sobrante, y suciedad alojada en componentes                              |
 
-Estudiante: Danilo Unapucha
+Estudiante: Matías Palomeque
    
-   | Insumo | Uso principal |
-   |--------+---------------|
-   |        |               |
-   |        |               |
-   |        |               |
-   |        |               |
-   |        |               |
-   |        |               |
+   | Insumo                            | Uso principal                                                                          |
+   |-----------------------------------+----------------------------------------------------------------------------------------|
+   | Pulsera antiestática              | Evita que se acumule electricidad estática en el cuerpo                                |
+   | Aire Comprimido                   | Elimina el polvo entre los componentes de manera segura                                |
+   | Destornillador con punta Metálica | Se usa para abrir compartimientos cerrados con tornillos, la punta ayuda a sostenerlos |
+   | Pasta Térmica                     | Ayuda a distribuir el calor en los componentes de mejor manera                         |
+   | Pinzas de Precisión               | Se usan para poder sujetar componentes pequeños                                        |
+   | Espuma Limpiadora                 | Se utiliza para poder limpiar la suciedad entre las aspas de los ventiladores          |
+   |                                   |                                                                                        |
 
 Estudiante: Danilo Unapucha
    
@@ -392,24 +421,36 @@ Estudiante: Danilo Unapucha
    |        |               |
    
 ** 3.2 Procedimiento de limpieza — Desktop
-   1. Apagar  
-   2. Desconectar la fuente 
-   3. Desconectar ventiladores
-   4. Comenzar con la limpieza con aire comprimido de ventiladores y
-      múltiples polvos que se encuentren el la placa madre
-   5. Utilizar alcohol isopropilico para la limpieza de CPU y gpu ya
-      hecha la limpieza poner pasta térmica y pads térmicos,
-      utilizar brocha antiestática para detallar al final antes de
-      volver armar 
+   1. Apagar completamente la computadora y desconectarla de corriente eléctrica
+   2. Desconectar la fuente de poder y retirar los cables necesarios 
+   3. Desconectar los ventiladores y demás componentes que eviten el
+      facil acceso al interior de la PC
+   4. Realizar la limpieza del polvo acumulado en los componentes,
+      especialmente de los ventiladores y la placa madre. Para esto es
+      recomendable utilizar aire comprimido
+   5. Limpiar la superficie de la CPU y GPU con alcohol isopropílico
+      para retirar restos de pasta térmica antigua. Luego, aplicar
+      nueva pasta térmica y reemplazar los pads térmicos de ser
+      necesario.
+   6. Utilizar una brocha antiestática para realizar una limpieza final
+      antes de reensamblar los componentes
+   7. Reconectar todos los componentes y verificar que las conexiones
+      estén correctamente instaladas antes de volver a enceder la computadora
 
 ** 3.3 Procedimiento de limpieza — Laptop
-   1. Apagar 
-   2. Desconectar la batería 
-   3. Desconectar los ventiladores
-   4. Limpiar los ventiladores con aire comprimido junto con el disipador
-   5. Limpiar con alcohol isopropilico la CPU y gpu y poner al final
-      la pasta térmica y los pads térmicos si es necesario usar la
-      brocha antiestética para dar los últimos detalles y volver armar 
+   1. Apagar correctamente el equipo y desconectarlo de la corriente
+   2. Desconectar la batería y cualquier cable que podría dañarse
+   4. Limpiar los componentes utilizando aire comprimido. Prestar
+      especial atención a lugares que tienen a acumularse de más
+      polvo, como los ventiladores, el disipador, la placa madre,
+      entre otros.
+   5. Limpiar la superficie de la CPU y GPU con alcohol
+      isopropílico. Luego, aplicar una nueva capa de pasta térmica.
+   6. Utilizar una brocha antiéstatica para realizar una limpieza
+      detallada final
+   7. Volver colocar a todos los componentes del equipo en su lugar y
+      verificar que las conexiones estén bien hechas antes de volver a
+      cerrar el computador.
 
 * Parte D. Aprendizaje obtenido
 
@@ -432,9 +473,15 @@ Estudiante: Danilo Unapucha
      son cosas que no sabía y si hubiera hecho mantenimiento a mi laptop probablemente
      hubiera dañado agún componente. 
 
-** Integrante 3 [Nombre]
-   - *¿Qué conocimiento nuevo obtuvo del curso?* [Respuesta]
-   - *¿Qué concepto corrigió o clarificó?* [Respuesta]
+** Integrante 3 Matías Palomeque
+   - *¿Qué conocimiento nuevo obtuvo del curso?* Conocí como están
+     colocados los componentes internamente dentro de una computadora,
+     y como desensamblar y reensamblar un gabinete. Además, aprendí
+     sobre precauciones que se debe tomar al momento de manejar
+     componentes electrónicos delicados como la placa madre.
+   - *¿Qué concepto corrigió o clarificó?* Entendí mejor para que se
+     utiliza cada uno de los conectores dentro de una placa madre, y
+     que cada cosa tiene un fin dentro de la computadora
      
 * Rúbrica de evaluación
 
