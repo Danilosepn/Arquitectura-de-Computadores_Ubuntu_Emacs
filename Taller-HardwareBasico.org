@@ -73,12 +73,10 @@ archivo usando ~C-c C-l~ o usando ~[[./carpeta-certificados/cert-int1.pdf]]~
    - *Correo:* danilo.unapucha@epn.edu.ec
    - *Certificado adjunto:*
      
-     #+begin_example
-      #+caption: Certificado Integrante 1
-      #+attr_latex: scale=0.75
-      #+label: fig:certificado-integrante-1
-      [[file:/home/danilo/talleres/images/TituloDanilo.pdf]]
-     #+end_example
+#+caption: Certificado de Aprobación - Danilo Unapucha
+#+attr_latex: :width 0.75\textwidth :center t
+#+label: fig:certificado-integrante 1
+[[./images/Danilo_Certificado.jpg]]
      
 2. Integrante 2
    - Nombre completo: Michael Sornoza
@@ -100,7 +98,17 @@ archivo usando ~C-c C-l~ o usando ~[[./carpeta-certificados/cert-int1.pdf]]~
 #+label: fig:certificado-integrante 3
 [[./images/CertificadoMatias.png]]
 
-     
+
+4. *Integrante 4*
+   - *Nombre completo:* Sebastian Arevalo
+   - *Correo:* martin.arevalo@epn.edu.ec
+   - *Certificado Adjunto*
+
+#+caption: Certificado de Aprobación - Sebastian Arevalo
+#+attr_latex: :width 0.75\textwidth :center t
+#+label: fig:certificado-integrante 4
+[[./images/Sebas_certificado.jpg]]
+
 * Parte B. Cuestionario argumentado grupal
 
 Para cada pregunta:
@@ -149,10 +157,13 @@ Estudiante: Matías Palomeque
   y/o voltaje necesaria. Ingresarlos en otro orden del establecido
   podría generar cortocircuitos.
 
-Estudiante: Danilo Unapucha
+  Estudiante: Sebastian Arevalo
 
-- /Alternativa escogida:/ [a completar]
-- /Justificación técnica:/ [a completar]
+- /Alternativa escogida:/ b
+-/Justificación técnica:/ Sis e colocan los pines en un orden
+incorrecto la carga de corriete que resivira cada uno sera distinta a
+la que estan diseñados para resistir o funcionar probocando daños que
+pueden ser permanentes. 
 
 - /Debate del grupo:/ [a completar]
 
@@ -190,10 +201,13 @@ Estudiante: Matías Palomeque
   conducir electricidad. Esto podría ocasionar que exista un
   cortocircuito en la placa madre y la dañe completamente.
 
-Estudiante: Danilo Unapucha
+Estudiante: Sebastian Arevalo
 
-- /Alternativa escogida:/ [a completar]
-- /Justificación técnica:/ [a completar]
+- /Alternativa escogida:/ b
+- /Justificación técnica:/ Al separar la placa madre del gabinete se
+  evitan problemas con el contacto de los circuitos con el metal del
+  gabinete de ya que el contacto podria probocar daños por una mala
+  transferencia de electricidad.
 
 - /Debate del grupo:/ [a completar]
 
@@ -224,17 +238,19 @@ Estudiante: Michael Sornoza
 
 Estudiante: Matías Palomeque
 
-- /Alternativa escogida:/ La pasta térmica ayuda a distrubuir
+- /Alternativa escogida:/ b
+- /Justificación técnica:/ La pasta térmica ayuda a distrubuir
   correctamente el calor y evita que los componentes se
   sobrecalienten. Es necesario colocarla siempre, excepto cuando el
   disipador ya tiene pasta térmica aplicada, ya que el exceso de pasta
   podría hacer que haya errores en la aplicación y podrían existir problemas.
-- /Justificación técnica:/ [a completar]
 
-Estudiante: Danilo Unapucha
+Estudiante: Sebastian Arevalo
 
-- /Alternativa escogida:/ [a completar]
-- /Justificación técnica:/ [a completar]
+- /Alternativa escogida:/ b
+- /Justificación técnica:/ Si el sistema de dispercion de de calor de
+  la computadora ya tine pre puesta pasta termica ya no es necesario
+  poner mas hasta que la misma ya no este en condiciones.
 
 - /Debate del grupo:/ [a completar]
 
@@ -276,10 +292,14 @@ Estudiante: Matías Palomeque
   electricidad estática y así poder manejar componentes delicados sin
   peligro de dañarlos.
 
-Estudiante: Danilo Unapucha
+Estudiante: Sebastian Arevalo
 
-- /Alternativa escogida:/ [a completar]
-- /Justificación técnica:/ [a completar]
+- /Alternativa escogida: b
+- /Justificación técnica:/ El cuerpo humano acumula electricidad
+  estatica de manera que esta si no se usa equipo anti estatico puede
+  llegar a los componentes que pueden sufrir daños permanentes al no
+  agunatar la electricidad que les llega.
+    
 
 - /Debate del grupo:/ [a completar]
 
@@ -317,10 +337,13 @@ Estudiante: Matías Palomeque
   conectado en sentido contrario. Es por esto, que es recomendable
   invertir las conexiones y volver a probar.
 
-Estudiante: Danilo Unapucha
+Estudiante: Sebastian Arevalo
 
-- /Alternativa escogida:/ [a completar]
-- /Justificación técnica:/ [a completar]
+- /Alternativa escogida:/ c
+- /Justificación técnica:/ Cuando un led no prende lo mas probable es
+  que este conectado de manera invertida asi que el probar conectarlo
+  invirtiendo la polaridad podria arreglar el problema.
+
 
 - /Debate del grupo:/ [a completar]
 
@@ -359,12 +382,14 @@ Estudiante: Matías Palomeque
   gráficas más actuales utilizan más potencia de la que pueden
   suministrar. Es por esto que pueden requerir un conector extra, así
   puede funcionar correctamente y cumplir todas sus funciones
+  
+Estudiante: Sebastian Arevalo
 
-Estudiante: Danilo Unapucha
-
-- /Alternativa escogida:/ [a completar]
-- /Justificación técnica:/ [a completar]
-
+- /Alternativa escogida:/ b
+- /Justificación técnica:/ LAs tarjetas graficas pueden consumir
+  cantidades muy grnades de energia haciendo que la que la energia
+  suministrada quede corta necesitando una coneccion extra
+  
 - /Debate del grupo:/ [a completar]
 
 * Parte C. Mantenimiento de computadores
@@ -407,16 +432,16 @@ Estudiante: Matías Palomeque
    | Espuma Limpiadora                 | Se utiliza para poder limpiar la suciedad entre las aspas de los ventiladores          |
    |                                   |                                                                                        |
 
-Estudiante: Danilo Unapucha
+Estudiante: Sebastian Arevalo
    
-   | Insumo | Uso principal |
-   |--------+---------------|
-   |        |               |
-   |        |               |
-   |        |               |
-   |        |               |
-   |        |               |
-   |        |               |
+   | Insumo                            | Uso principal                                                                                      |
+   |-----------------------------------+----------------------------------------------------------------------------------------------------|
+   | Pasta termica                     | Ayuda a distribuir el calor desde el CPU hacia el disipador                                        |
+   | Cinta resistente al calor         | Ayuda a sostener siertas partes como el sistema de refrigeracion ya que resiste altas temperaturas |
+   | Alcohol isopropilico              | Con este se puede limpiar de manera profunda dispositivos electronicos sin dañar los circuitos     |
+   | Aire comprimido                   | Permite limpiar los ventiladores y partes dificiles de alcanzar llenas de polvo                    |
+   | Destornillador con punta metalica | Importante para abrir el dispostivo con facilidad y no perder los tornillos en el proseso          |
+   | THermal Putty                     | Grasa que ayuda con la disipacion del calor                                                        |
    
 ** 3.2 Procedimiento de limpieza — Desktop
    1. Apagar completamente la computadora y desconectarla de corriente eléctrica
@@ -480,7 +505,16 @@ Estudiante: Danilo Unapucha
    - *¿Qué concepto corrigió o clarificó?* Entendí mejor para que se
      utiliza cada uno de los conectores dentro de una placa madre, y
      que cada cosa tiene un fin dentro de la computadora
-     
+
+     ** Integrante 4 Sebastian Arevalo
+   - *¿Qué conocimiento nuevo obtuvo del curso?* Aprendi sobre las
+     herramientas que deberia usar al momento de dar mantenimiento a
+     un computador o laptop ya que desconocia acerca de los equipos
+     anti estaticos o de la pasta Putty.
+   - *¿Qué concepto corrigió o clarificó?* Comprendi mejor como dar
+     mantenimiento aun computador sin comprometer las piezas internas
+     del mismo además de aclarar ciertos conceptos con los puertos de
+     algunos componentes.
 * Rúbrica de evaluación
 
   | Criterio                               | Puntaje máximo |
