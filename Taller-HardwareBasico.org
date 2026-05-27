@@ -95,12 +95,10 @@ archivo usando ~C-c C-l~ o usando ~[[./carpeta-certificados/cert-int1.pdf]]~
    - *Correo:* matias.palomeque@epn.edu.ec
    - *Certificado Adjunto*
 
-     #+begin_example
-     #+caption: caption
-     #+attr_latex: scale=0.75
-     #+label: fig:Certificado-Integrante-3
-     [[./images/CertificadoIntegrante3.pdf]]
-     #+end_example
+#+caption: Certificado de Aprobación - Matías Palomeque
+#+attr_latex: :width 0.75\textwidth :center t
+#+label: fig:certificado-integrante 3
+[[./images/CertificadoMatias.png]]
 
      
 * Parte B. Cuestionario argumentado grupal
