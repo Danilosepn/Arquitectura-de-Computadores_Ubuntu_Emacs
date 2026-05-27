@@ -1,7 +1,7 @@
 
 #+TITLE: Taller - Conceptos Básicos de Hardware y Ensamblaje de Computadores
 #+SUBTITLE: ICCD332 Arquitectura de Computadores
-#+AUTHOR: Danilo Unapucha, Michael Sornoza , , y 
+#+AUTHOR: Danilo Unapucha, Michael Sornoza , Matías Palomeque, y Sebastian Arevalo 
 #+DATE: 2026-05-24
 #+OPTIONS: toc:nil num:t
 #+LANGUAGE: es
@@ -62,7 +62,7 @@ Puede configurar según el idioma de su preferencia. El texto está
 disponible en Español. Los vídeos disponen de subtítulos en varios
 idiomas.
 
-* Parte A. Integrantes y certificados
+* Parte A. Integrantes y certificados                                     :x:
 Para insertar la captura del certificado utilice YASnippet: Escriba
 ~fig_~ seguido de ~C-TAB~. Esto produce ~#+caption~, ~#+attr_latex~ y
 ~#+label~ que permiten colocar un encabezado a la imagen, controlar el
@@ -560,19 +560,19 @@ Para insertar una referencia a un recurso bibliográfico
           (t basic))))
 
      #+end_src
-* Verificación de Entregables [0%]:
+* Verificación de Entregables [100%]:
 Ejecute ~C-c C-c~ sobre los ítems de tarea según se hayan cumplido o
 no. Si un ítem no pudo realizarse apunte en la siguiente sección las
 razones al respecto.
-- [ ] Los enlaces a los certificados en el documento ~.org~ funcionan.
-- [ ] Resolución completa del Cuestionario2.
-- [ ] Revisión del vídeo sobre mantenimiento a computador ASUS. 
-- [ ] Tutorial de Comandos Emacs realizado.
-- [ ] Lista de insumos para mantenimiento completa.
-- [ ] Procedimiento de mantenimiento para desktop completo.
-- [ ] Procedimiento de mantenimiento para laptop completo.
-- [ ] Revisión de ortografía con ~ispell-buffer~ en el buffer
-- [ ] Generación de Archivo PDF ~M-x org-latex-export-to-pdf~
-- [ ] Subir al aula virutal archivo ~.org~ y ~.pdf~
+- [X] Los enlaces a los certificados en el documento ~.org~ funcionan.
+- [X] Resolución completa del Cuestionario2.
+- [X] Revisión del vídeo sobre mantenimiento a computador ASUS. 
+- [X] Tutorial de Comandos Emacs realizado.
+- [X] Lista de insumos para mantenimiento completa.
+- [X] Procedimiento de mantenimiento para desktop completo.
+- [X] Procedimiento de mantenimiento para laptop completo.
+- [X] Revisión de ortografía con ~ispell-buffer~ en el buffer
+- [X] Generación de Archivo PDF ~M-x org-latex-export-to-pdf~
+- [X] Subir al aula virutal archivo ~.org~ y ~.pdf~
 
 #+print_bibliography:
