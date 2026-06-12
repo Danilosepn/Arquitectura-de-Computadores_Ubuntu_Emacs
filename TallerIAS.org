@@ -133,7 +133,7 @@ contador de programa inicia en la posición $[PC] \leftarrow 300$. El conjunto d
 instrucciones del computador o ISA[fn:2] está definido en la Tabla
 \ref{tab:tablaISA-IAS}. A fin de terminar el programa, se agrega la
 instrucción ~0x99~ que lleva al computador al estado de HALT. Conteste las
-siguientes preguntas considerando la Tabla [[tab:memorsia-compu]] como el
+siguientes preguntas considerando la Tabla [[tab:memoria-compu]] como el
 mapa de memoria de la máquina y obtenga el programa en lenguaje ensamblador y en
 RTL.
 
@@ -154,9 +154,67 @@ RTL.
 *** Preguntas
 
 1. ¿Qué resultado se tiene al final en el registro del acumulador?
+   
+   Procedmiento:
+   Para la direccion $\text{0x300}$
+   - $[PC] \leftarrow [IR]$
+   - $[IR] \leftarrow \text{0x300}$
+   - $[IR] \leftarrow \text{01940}$
+   - $[AC] \leftarrow [940]$
+   - $[AC] \leftarrow \text{5}$
 
+   - $[PC] \leftarrow [IR]$
+   - $[IR] \leftarrow \text{0x300}$
+   - $[IR] \leftarrow \text{06941}$
+   - $[AC] \leftarrow [AC]-[941]$
+   - $[AC] \leftarrow 5-2$
+   - $[AC] \leftarrow \text{3}$
+
+   Para la dirección $\text{0x301}$
+
+   - $[PC] \leftarrow [IR]$
+   - $[IR] \leftarrow \text{0x301}$
+   - $[IR] \leftarrow \text{21940}$
+   - $[940] \leftarrow [AC]$
+   - $[940] \leftarrow \text{3}$
+
+   - $[PC] \leftarrow [IR]$
+   - $[IR] \leftarrow \text{0x301}$
+   - $[IR] \leftarrow \text{14000}$
+   - $[AC] \leftarrow [AC] * 2$
+   - $[AC] \leftarrow \text{6}$
+
+   Para la dirección $\text{0x302}$
+
+   - $[PC] \leftarrow [IR]$
+   - $[IR] \leftarrow \text{0x302}$
+   - $[IR] \leftarrow \text{21941}$
+   - $[941] \leftarrow [AC]$
+   - $[941] \leftarrow \text{6}$
+
+   - $[PC] \leftarrow [IR]$
+   - $[IR] \leftarrow \text{0x302}$
+   - $[IR] \leftarrow \text{02940}$
+   - $[AC] \leftarrow -[940]$
+   - $[AC] \leftarrow \text{-3}$
+
+   Para la dirección $\text{0x303}$
+   
+   - $[PC] \leftarrow [IR]$
+   - $[IR] \leftarrow \text{0x303}$
+   - $[IR] \leftarrow \text{21940}$
+   - $[940] \leftarrow [AC]$
+   - $[940] \leftarrow \text{-3}$
+
+   - $[PC] \leftarrow [IR]$
+   - $[IR] \leftarrow \text{0x303}$
+   - $[IR] \leftarrow \text{99000}$
+   - $\text{HALT}$  
+     
    Respuesta:
+   
    $[AC] \leftarrow -3$
+ 
 
 2. ¿Se sobrescribe algún registro como resultado de la ejecución? Si
    es verdadero, indique qué registro y con qué valor.
