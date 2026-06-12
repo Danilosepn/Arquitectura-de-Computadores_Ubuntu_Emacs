@@ -36,7 +36,7 @@
 #+BIBLIOGRAPHY: ../bibliography/bibliography.bib
 
 #+begin_export latex
-\fancyhead[C]{\includegraphics[scale=0.05]{../images/logoEPN.jpg}\\
+\fancyhead[C]{\includegraphics[scale=0.05]{images/logoEPN.jpg}\\
 ESCUELA POLITÉCNICA NACIONAL\\FACULTAD DE INGENIERÍA DE SISTEMAS\\
 ARQUITECTURA DE COMPUTADORES}
 \thispagestyle{fancy}
