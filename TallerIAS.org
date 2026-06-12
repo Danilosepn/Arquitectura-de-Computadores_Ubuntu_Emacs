@@ -4,10 +4,10 @@
 #+optifgsons: inline:t num:t p:nil pri:nil prop:nil stat:t tags:t
 #+options: tasks:t tex:t timestamp:t title:t toc:nil todo:t |:t
 
-#+title: Taller — Máquina IAS / Von Neumann
+#+title: Taller — Maquina IAS / Von Neumann
 #+subtitle: ICCD332 Arquitectura de Computadores
 #+author: Danilo Unapucha
-#+email: danilo.unapucha@epn.edu.ec, 
+#+email: danilo.unapucha@epn.edu.ec
 #+date: 2026-06-10
 #+language: es
 #+creator: Emacs 27.1 (Org mode 9.7.5)
@@ -152,9 +152,6 @@ RTL.
 |-----------+--------------+---------+--------------+---------|
 
 *** Preguntas
-
-1. ¿Qué resultado se tiene al final en el registro del acumulador?
-   
    Procedmiento:
    Para la direccion $\text{0x300}$
    - $[PC] \leftarrow [IR]$
@@ -211,6 +208,7 @@ RTL.
    - $[IR] \leftarrow \text{99000}$
    - $\text{HALT}$  
      
+1. ¿Qué resultado se tiene al final en el registro del acumulador?  
    Respuesta:
    
    $[AC] \leftarrow -3$
@@ -229,7 +227,7 @@ RTL.
 
    - La operación que modifica el bit es SUB M(941)
      Aquí se hacemos que la ALU haga la siguiente operación $[AC]
-     \leftarrow [AC] + Comp2([M(941)])
+     \leftarrow [AC] + Comp2([M(941)])$
      Donde tenemos que el valor de $[AC]$ es 5 o ($00000101$) y el
      valor de $M(941)$ es 2 o ($00000010$), a este mismo valor se le
      hace el complemento a 2 dando como resultado ($11111110$) y ahí
@@ -263,34 +261,41 @@ Escriba el código Assembler del programa que ejecuta el computador IAS.
 
 #+begin_src
 LOAD M(940)
-
+SUB M(941)
+STOR M(940)
+SHL AC,1
+STOR M(941)
+LOAD M(940)
+NEG
+STOR M(940)
+HALT
 #+end_src
 
 * Equipo de Trabajo
 
 Complete la información de los integrantes del grupo.
 
-|-----------------+----------------------------+-------------|
-| Nombre          | Email                      | Rol         |
-|-----------------+----------------------------+-------------|
-| Danilo Unapucha | danilo.unapucha@epn.edu.ec | Líder       |
-| Michael Sornoza | michael.sornoza@epn.edu.ec | Colaborador |
-|                 |                            |             |
-|-----------------+----------------------------+-------------|
+|-------------------+----------------------------+-------------|
+| Nombre            | Email                      | Rol         |
+|-------------------+----------------------------+-------------|
+| Danilo Unapucha   | danilo.unapucha@epn.edu.ec | Líder       |
+| Michael Sornoza   | michael.sornoza@epn.edu.ec | Colaborador |
+| Sebastian Arevalo | martin.arevalo@epn.edu.ec  | Colaborador |
+|-------------------+----------------------------+-------------|
 
-* Verificación de Entregables [0%]
+* Verificación de Entregables [100%]
 
 Ejecute ~C-c C-c~ sobre los ítems de tarea según se hayan cumplido o
 no. Si un ítem no pudo realizarse, anote en la sección de problemas
 las razones.
 
-- [ ] Tabla de instrucciones IAS completada.
-- [ ] Preguntas del ejercicio respondidas.
-- [ ] Código RTL completo.
-- [ ] Código Assembler completo.
-- [ ] Revisión de ortografía con ~ispell-buffer~.
-- [ ] Exportación a PDF con ~M-x org-latex-export-to-pdf~.
-- [ ] Subir al aula virtual archivo ~.org~ y ~.pdf~.
+- [X] Tabla de instrucciones IAS completada.
+- [X] Preguntas del ejercicio respondidas.
+- [X] Código RTL completo.
+- [X] Código Assembler completo.
+- [X] Revisión de ortografía con ~ispell-buffer~.
+- [X] Exportación a PDF con ~M-x org-latex-export-to-pdf~.
+- [X] Subir al aula virtual archivo ~.org~ y ~.pdf~.
 
 ** Problemas con la tarea / logísticos
 
