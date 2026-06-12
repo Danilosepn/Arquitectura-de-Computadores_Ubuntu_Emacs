@@ -156,14 +156,14 @@ RTL.
    Para la direccion $\text{0x300}$
    
    - $[PC] \leftarrow \text{0x300}$
-   - $[IR] \leftarrow \text{[[PC]]}$
+   - $[IR] \leftarrow [[PC]]$
    - $[IR] \leftarrow \text{[0x300]}$  
    - $[IR] \leftarrow \text{0x01940}$
    - $[AC] \leftarrow \text{[0x940]}$
    - $[AC] \leftarrow \text{005}$
 
    - $[PC] \leftarrow \text{0x300}$
-   - $[IR] \leftarrow \text{[[PC]]}$
+   - $[IR] \leftarrow [[PC]]$
    - $[IR] \leftarrow \text{[0x300]}$  
    - $[IR] \leftarrow \text{0x06941}$
    - $[AC] \leftarrow [AC]-\text{[0x941]}$
@@ -173,14 +173,14 @@ RTL.
    Para la dirección $\text{0x301}$
 
    - $[PC] \leftarrow \text{0x301}$
-   - $[IR] \leftarrow \text{[[PC]]}$
+   - $[IR] \leftarrow [[PC]]$
    - $[IR] \leftarrow \text{[0x301]}$  
    - $[IR] \leftarrow \text{0x21940}$
    - $\text{[0x940]} \leftarrow [AC]$
    - $\text{[0x940]} \leftarrow \text{003}$
 
    - $[PC] \leftarrow \text{0x301}$
-   - $[IR] \leftarrow \text{[[PC]]}$
+   - $[IR] \leftarrow [[PC]]$
    - $[IR] \leftarrow \text{[0x301]}$  
    - $[IR] \leftarrow \text{0x14000}$
    - $[AC] \leftarrow [AC] * 2$
@@ -189,14 +189,14 @@ RTL.
    Para la dirección $\text{0x302}$
    
    - $[PC] \leftarrow \text{0x302}$
-   - $[IR] \leftarrow \text{[[PC]]}$
+   - $[IR] \leftarrow [[PC]]$
    - $[IR] \leftarrow \text{[0x302]}$  
    - $[IR] \leftarrow \text{0x21941}$
    - $\text{[0x941]} \leftarrow [AC]$
    - $\text{[0x941]} \leftarrow \text{006}$
    
    - $[PC] \leftarrow \text{0x302}$
-   - $[IR] \leftarrow \text{[[PC]]}$
+   - $[IR] \leftarrow [[PC]]$
    - $[IR] \leftarrow \text{[0x302]}$  
    - $[IR] \leftarrow \text{0x02940}$
    - $[AC] \leftarrow \text{-[0x940]}$
@@ -206,14 +206,14 @@ RTL.
    Para la dirección $\text{0x303}$
 
    - $[PC] \leftarrow \text{0x303}$
-   - $[IR] \leftarrow \text{[[PC]]}$
+   - $[IR] \leftarrow [[PC]]$
    - $[IR] \leftarrow \text{[0x303]}$  
    - $[IR] \leftarrow \text{0x21940}$
    - $\text{[0x940]} \leftarrow [AC]$
    - $\text{[0x940]} \leftarrow \text{-003}$   
 
    - $[PC] \leftarrow \text{0x303}$
-   - $[IR] \leftarrow \text{[[PC]]}$
+   - $[IR] \leftarrow [[PC]]$
    - $[IR] \leftarrow \text{[0x303]}$  
    - $[IR] \leftarrow \text{0x99000}$
    - $[IR] \leftarrow \text{HALT}$
