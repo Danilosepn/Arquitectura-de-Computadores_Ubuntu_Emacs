@@ -270,13 +270,13 @@ LOAD M(940)
 
 Complete la información de los integrantes del grupo.
 
-|-----------------+----------------------------+-------|
-| Nombre          | Email                      | Rol   |
-|-----------------+----------------------------+-------|
-| Danilo Unapucha | danilo.unapucha@epn.edu.ec | Líder |
-|                 |                            |       |
-|                 |                            |       |
-|-----------------+----------------------------+-------|
+|-----------------+----------------------------+-------------|
+| Nombre          | Email                      | Rol         |
+|-----------------+----------------------------+-------------|
+| Danilo Unapucha | danilo.unapucha@epn.edu.ec | Líder       |
+| Michael Sornoza | michael.sornoza@epn.edu.ec | Colaborador |
+|                 |                            |             |
+|-----------------+----------------------------+-------------|
 
 * Verificación de Entregables [0%]
 
