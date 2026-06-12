@@ -154,59 +154,70 @@ RTL.
 *** Preguntas
    Procedmiento:
    Para la direccion $\text{0x300}$
-   - $[PC] \leftarrow [IR]$
-   - $[IR] \leftarrow \text{0x300}$
-   - $[IR] \leftarrow \text{01940}$
-   - $[AC] \leftarrow [940]$
-   - $[AC] \leftarrow \text{5}$
+   
+   - $[PC] \leftarrow \text{0x300}$
+   - $[IR] \leftarrow [[PC]]$
+   - $[IR] \leftarrow \text{[0x300]}$  
+   - $[IR] \leftarrow \text{0x01940}$
+   - $[AC] \leftarrow \text{[0x940]}$
+   - $[AC] \leftarrow \text{005}$
 
-   - $[PC] \leftarrow [IR]$
-   - $[IR] \leftarrow \text{0x300}$
-   - $[IR] \leftarrow \text{06941}$
-   - $[AC] \leftarrow [AC]-[941]$
-   - $[AC] \leftarrow 5-2$
-   - $[AC] \leftarrow \text{3}$
+   - $[PC] \leftarrow \text{0x300}$
+   - $[IR] \leftarrow [[PC]]$
+   - $[IR] \leftarrow \text{[0x300]}$  
+   - $[IR] \leftarrow \text{0x06941}$
+   - $[AC] \leftarrow [AC]-\text{[0x941]}$
+   - $[AC] \leftarrow \text{0x005 - 0x002}$
+   - $[AC] \leftarrow \text{003}$   
 
    Para la dirección $\text{0x301}$
 
-   - $[PC] \leftarrow [IR]$
-   - $[IR] \leftarrow \text{0x301}$
-   - $[IR] \leftarrow \text{21940}$
-   - $[940] \leftarrow [AC]$
-   - $[940] \leftarrow \text{3}$
+   - $[PC] \leftarrow \text{0x301}$
+   - $[IR] \leftarrow [[PC]]$
+   - $[IR] \leftarrow \text{[0x301]}$  
+   - $[IR] \leftarrow \text{0x21940}$
+   - $\text{[0x940]} \leftarrow [AC]$
+   - $\text{[0x940]} \leftarrow \text{003}$
 
-   - $[PC] \leftarrow [IR]$
-   - $[IR] \leftarrow \text{0x301}$
-   - $[IR] \leftarrow \text{14000}$
+   - $[PC] \leftarrow \text{0x301}$
+   - $[IR] \leftarrow [[PC]]$
+   - $[IR] \leftarrow \text{[0x301]}$  
+   - $[IR] \leftarrow \text{0x14000}$
    - $[AC] \leftarrow [AC] * 2$
-   - $[AC] \leftarrow \text{6}$
-
+   - $[AC] \leftarrow \text{006}$
+   
    Para la dirección $\text{0x302}$
-
-   - $[PC] \leftarrow [IR]$
-   - $[IR] \leftarrow \text{0x302}$
-   - $[IR] \leftarrow \text{21941}$
-   - $[941] \leftarrow [AC]$
-   - $[941] \leftarrow \text{6}$
-
-   - $[PC] \leftarrow [IR]$
-   - $[IR] \leftarrow \text{0x302}$
-   - $[IR] \leftarrow \text{02940}$
-   - $[AC] \leftarrow -[940]$
-   - $[AC] \leftarrow \text{-3}$
+   
+   - $[PC] \leftarrow \text{0x302}$
+   - $[IR] \leftarrow [[PC]]$
+   - $[IR] \leftarrow \text{[0x302]}$  
+   - $[IR] \leftarrow \text{0x21941}$
+   - $\text{[0x941]} \leftarrow [AC]$
+   - $\text{[0x941]} \leftarrow \text{006}$
+   
+   - $[PC] \leftarrow \text{0x302}$
+   - $[IR] \leftarrow [[PC]]$
+   - $[IR] \leftarrow \text{[0x302]}$  
+   - $[IR] \leftarrow \text{0x02940}$
+   - $[AC] \leftarrow \text{-[0x940]}$
+   - $[AC] \leftarrow \text{-003}$
+   
 
    Para la dirección $\text{0x303}$
-   
-   - $[PC] \leftarrow [IR]$
-   - $[IR] \leftarrow \text{0x303}$
-   - $[IR] \leftarrow \text{21940}$
-   - $[940] \leftarrow [AC]$
-   - $[940] \leftarrow \text{-3}$
 
-   - $[PC] \leftarrow [IR]$
-   - $[IR] \leftarrow \text{0x303}$
-   - $[IR] \leftarrow \text{99000}$
-   - $\text{HALT}$  
+   - $[PC] \leftarrow \text{0x303}$
+   - $[IR] \leftarrow [[PC]]$
+   - $[IR] \leftarrow \text{[0x303]}$  
+   - $[IR] \leftarrow \text{0x21940}$
+   - $\text{[0x940]} \leftarrow [AC]$
+   - $\text{[0x940]} \leftarrow \text{-003}$   
+
+   - $[PC] \leftarrow \text{0x303}$
+   - $[IR] \leftarrow [[PC]]$
+   - $[IR] \leftarrow \text{[0x303]}$  
+   - $[IR] \leftarrow \text{0x99000}$
+   - $[IR] \leftarrow \text{HALT}$
+   
      
 1. ¿Qué resultado se tiene al final en el registro del acumulador?  
    Respuesta:
