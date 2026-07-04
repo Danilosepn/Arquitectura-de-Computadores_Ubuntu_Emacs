@@ -1,0 +1,578 @@
+
+#+TITLE: Taller - Conceptos Básicos de Hardware y Ensamblaje de Computadores
+#+SUBTITLE: ICCD332 Arquitectura de Computadores
+#+AUTHOR: Danilo Unapucha, Michael Sornoza , Matías Palomeque, y Sebastian Arevalo 
+#+DATE: 2026-05-24
+#+OPTIONS: toc:nil num:t
+#+LANGUAGE: es
+
+#+latex_class: article
+#+latex_class_options:
+#+latex_header:
+#+latex_header_extra:
+#+description:
+#+keywords:
+#+subtitle:
+#+latex_footnote_command: \footnote{%s%s}
+#+latex_engraved_theme:
+#+latex_compiler: latexmk
+
+#+latex_header: \usepackage{fancyhdr}
+#+latex_header: \usepackage[top=25mm, left=25mm, right=25mm]{geometry}
+#+latex_header: \usepackage{longtable}
+#+latex_header: \fancyhead[R]{}
+#+latex_header: \setlength\headheight{43.0pt}
+#+LATEX_HEADER: \usepackage{tabularx}
+#+LATEX_HEADER: \usepackage{longtable}
+
+#+cite_export: biblatex
+#+LATEX_HEADER: \usepackage[backend=biber, style=ieee]{biblatex}
+#+BIBLIOGRAPHY: ../bibliography/bibliography.bib
+
+#+begin_export latex
+\fancyhead[C]{\includegraphics[scale=0.05]{../images/logoEPN.jpg}\\
+ESCUELA POLITECNICA NACIONAL\\FACULTAD DE INGENIERIA DE SISTEMAS\\
+ARQUITECTURA DE COMPUTADORES}
+\thispagestyle{fancy}
+#+end_export
+
+
+* Instrucciones generales
+
+  Este taller se realiza en *grupos*. Cada integrante debe completar
+  individualmente el curso Cisco Networking Academy:
+  *Conceptos Básicos de Hardware de Computadora* y obtener su
+  certificado de completitud. 
+
+  *Entregables del grupo:*
+  - Resolución de éste archivo fuente ~.org~
+  - El PDF exportado desde Emacs ~M-x org-latex-export-to-pdf~
+  - Los certificados individuales de cada integrante (PDF o imagen)
+
+
+  *Entregable Individual(Tarea):*
+  -  Resolver el cuestionario individual en el aula virtual
+** Recursos
+Cree su usuario en la plataforma de /Cisco Networking Academy/. Use el
+siguiente enlace:
+
+[[https://www.netacad.com/es/courses/computer-hardware-basics?courseLang=en-US][Cisco Computer Hardware Basics]]
+
+Puede configurar según el idioma de su preferencia. El texto está
+disponible en Español. Los vídeos disponen de subtítulos en varios
+idiomas.
+
+* Parte A. Integrantes y certificados                                     :x:
+Para insertar la captura del certificado utilice YASnippet: Escriba
+~fig_~ seguido de ~C-TAB~. Esto produce ~#+caption~, ~#+attr_latex~ y
+~#+label~ que permiten colocar un encabezado a la imagen, controlar el
+escalado de la misma y una referencia. Finalmente inserte el enlace al
+archivo usando ~C-c C-l~ o usando ~[[./carpeta-certificados/cert-int1.pdf]]~
+1. *Integrante 1*
+   - *Nombre completo:* Danilo Unapucha
+   - *Correo:* danilo.unapucha@epn.edu.ec
+   - *Certificado adjunto:*
+     
+#+caption: Certificado de Aprobación - Danilo Unapucha
+#+attr_latex: :width 0.75\textwidth :center t
+#+label: fig:certificado-integrante 1
+[[./images/Danilo_Certificado.jpg]]
+     
+2. Integrante 2
+   - Nombre completo: Michael Sornoza
+   - Correo: michael.sornoza@epn.edu.ec
+   - Certificado adjunto:
+
+#+caption: Certificado de Aprobación - Michael Sornoza
+#+attr_latex: :width 0.75\textwidth :center t
+#+label: fig:certificado-integrante 2
+[[./images/Certificado_Michael.png]]
+
+3. *Integrante 3*
+   - *Nombre completo:* Matías Palomeque
+   - *Correo:* matias.palomeque@epn.edu.ec
+   - *Certificado Adjunto*
+
+#+caption: Certificado de Aprobación - Matías Palomeque
+#+attr_latex: :width 0.75\textwidth :center t
+#+label: fig:certificado-integrante 3
+[[./images/CertificadoMatias.png]]
+
+
+4. *Integrante 4*
+   - *Nombre completo:* Sebastian Arevalo
+   - *Correo:* martin.arevalo@epn.edu.ec
+   - *Certificado Adjunto*
+
+#+caption: Certificado de Aprobación - Sebastian Arevalo
+#+attr_latex: :width 0.75\textwidth :center t
+#+label: fig:certificado-integrante 4
+[[./images/Sebas_certificado.jpg]]
+
+* Parte B. Cuestionario argumentado grupal
+
+Para cada pregunta:
+
+- Indique la alternativa escogida (letra).
+- Escriba una justificación técnica breve (3 a 6 líneas). Fundamente
+  su respuesta. Su insumo principal es el curso de Conceptos Básicos
+  de Hardware. Si usa otro material referenciar.
+- Discuta con el grupo de trabajo las opciones y la respuesta ¿Existió
+  consenso? ¿Cuáles fueron las principales discrepancias?
+
+*Criterio:* correcto/incorrecto + calidad del argumento técnico.
+
+** Pregunta 1
+Al instalar una CPU en un socket LGA, ¿por qué es crítico alinear el
+pin 1 de la CPU con el pin 1 del socket?
+
+a. Para que el sistema arranque con mayor rapidez 
+
+b. Para evitar daños en la CPU y el socket al insertar incorrectamente
+
+c. Porque el pin 1 es el único que conduce electricidad 
+
+d. Para que el disipador quede centrado automáticamente
+
+Estudiante: Danilo Unapucha
+
+- /Alternativa escogida:/ b
+- /Justificación técnica:/ Esto se debe a que le socket tiene pines
+  muy delicados y si no se ponen correctamente pueden llegar a
+  romperse
+
+Estudiante: Michael Sornoza 
+
+- /Alternativa escogida:/ b
+- /Justificación técnica:/ El poner mal el orden de los pines ocasionaría que se dañen
+  los componentes electeónicos, porque cada pin lleva electricidad a un componente
+  diferente y se se le da un mal voltaje a un componente se puede dañar el componente
+  y en el peor de los casos varios circuitos. 
+
+Estudiante: Matías Palomeque
+
+- /Alternativa escogida:/ b
+- /Justificación técnica:/ Los pines tienen un orden específico, ya
+  que garantizan que cada componente reciba la cantidad de corriente
+  y/o voltaje necesaria. Ingresarlos en otro orden del establecido
+  podría generar cortocircuitos.
+
+  Estudiante: Sebastian Arevalo
+
+- /Alternativa escogida:/ b
+-/Justificación técnica:/ Sis e colocan los pines en un orden
+incorrecto la carga de corriete que resivira cada uno sera distinta a
+la que estan diseñados para resistir o funcionar probocando daños que
+pueden ser permanentes. 
+
+- /Debate del grupo:/ [a completar]
+
+
+** Pregunta 2
+Al montar la placa madre en el gabinete, ¿cuál es la función de los separadores (standoffs)?
+
+a. Sostener el peso de las tarjetas de expansión
+
+b. Evitar cortocircuitos entre la placa madre y el metal del gabinete
+
+c. Mejorar la ventilación de la placa madre
+
+d. Facilitar la alineación del panel de E/S trasero
+
+Estudiante: Danilo Unapucha
+
+- /Alternativa escogida:/ b
+- /Justificación técnica:/ Estos tienen como función que la placa
+  madre no toque con la tapa metálica de atrás para que los circuitos
+  no toquen y no hagan cortocircuito 
+
+Estudiante: Michael Sornoza
+
+- /Alternativa escogida:/ b 
+- /Justificación técnica:/ De esta manera se protege los componentes del metal, esto se debe que en
+  la placa hay varios circuitos con componentes y soldadura que conducen electricidad y al tener contacto
+  con el metal ocasionaría un cortocircuito. 
+
+Estudiante: Matías Palomeque
+
+- /Alternativa escogida:/ b
+- /Justificación técnica:/ Los separadores evitan el contacto  entre
+  la placa madre y el metal del gabinete, ya que el metal puede
+  conducir electricidad. Esto podría ocasionar que exista un
+  cortocircuito en la placa madre y la dañe completamente.
+
+Estudiante: Sebastian Arevalo
+
+- /Alternativa escogida:/ b
+- /Justificación técnica:/ Al separar la placa madre del gabinete se
+  evitan problemas con el contacto de los circuitos con el metal del
+  gabinete de ya que el contacto podria probocar daños por una mala
+  transferencia de electricidad.
+
+- /Debate del grupo:/ [a completar]
+
+
+** Pregunta 3
+Según el manual de ensamblaje de Cisco, ¿cuándo NO es necesario aplicar pasta térmica al instalar el disipador sobre la CPU?
+
+a. Cuando la CPU es de alto rendimiento
+
+b. Cuando el disipador ya incluye pasta térmica preaplicada
+
+c. Cuando la CPU tiene más de un año de uso
+
+d. Cuando el gabinete tiene buena ventilación
+
+Estudiante: Danilo Unapucha
+
+- /Alternativa escogida:/ b
+- /Justificación técnica:/ En la actualidad ya la mayoría de
+  disipadores ya vienen así y no hace falta poner mas pasta térmica sino seria un desperdicio
+
+Estudiante: Michael Sornoza
+
+- /Alternativa escogida:/ b
+- /Justificación técnica:/ La pasta térmica es escencial en un equipo porque ayuda a distribuir el calor
+  el único escenario en el que no se le aplica es cuando el dispostivo es nuevo y ya tiene aplicada
+  de fábrica la pasta, caso contrario siempre en un mantenimiento hay que aplicar la pasta térmica. 
+
+Estudiante: Matías Palomeque
+
+- /Alternativa escogida:/ b
+- /Justificación técnica:/ La pasta térmica ayuda a distrubuir
+  correctamente el calor y evita que los componentes se
+  sobrecalienten. Es necesario colocarla siempre, excepto cuando el
+  disipador ya tiene pasta térmica aplicada, ya que el exceso de pasta
+  podría hacer que haya errores en la aplicación y podrían existir problemas.
+
+Estudiante: Sebastian Arevalo
+
+- /Alternativa escogida:/ b
+- /Justificación técnica:/ Si el sistema de dispercion de de calor de
+  la computadora ya tine pre puesta pasta termica ya no es necesario
+  poner mas hasta que la misma ya no este en condiciones.
+
+- /Debate del grupo:/ [a completar]
+
+
+** Pregunta 4
+¿Por qué se recomienda usar pulsera antiestática y alfombrilla antiestática al manipular componentes internos?
+
+a. Para proteger al técnico de descargas de 220 V
+
+b. Para evitar que la electricidad estática dañe los componentes
+
+c. Para cumplir una norma estética del laboratorio
+
+d. Para que los tornillos no se magneticen
+
+Estudiante: Danilo Unapucha
+
+- /Alternativa escogida:/ b 
+- /Justificación técnica:/ Porque nuestro cuerpo acumula la
+  electricidad estática y esta si se aplica a un componente de la pc
+  es suficiente para quemarlo esto es lo que evita la pulsera y la
+  alfombrilla mandado esta electricidad a tierra 
+
+Estudiante: Michael Sornoza
+
+- /Alternativa escogida:/ b
+- /Justificación técnica:/ La electricidad estática es un problema muy común y que involuntariamente las personas
+  sabemos producirlas y al transferir esa electricidad a los componenetes electrónicos más delicados pueden
+  dañarse, por eso la pulsera y la alfombra redirigen a tierra.  
+
+Estudiante: Matías Palomeque
+
+- /Alternativa escogida: b
+- /Justificación técnica:/ Nuestro cuerpo tiende a acumular
+  electricidad estática al solo frotar cosas que conducen la
+  electricidad. Si bien no es mucho voltaje, los componentes de la PC
+  son sumamente frágiles, y pueden dañarse con voltajes tan pequeños
+  como 20V. Una pulsera antiestática ayuda a evitar que conduzcamos
+  electricidad estática y así poder manejar componentes delicados sin
+  peligro de dañarlos.
+
+Estudiante: Sebastian Arevalo
+
+- /Alternativa escogida: b
+- /Justificación técnica:/ El cuerpo humano acumula electricidad
+  estatica de manera que esta si no se usa equipo anti estatico puede
+  llegar a los componentes que pueden sufrir daños permanentes al no
+  agunatar la electricidad que les llega.
+    
+
+- /Debate del grupo:/ [a completar]
+
+
+** Pregunta 5
+Si al iniciar la computadora por primera vez un LED del panel frontal no funciona, ¿qué indica el manual de Cisco?
+
+a. Reemplazar el conector por uno de repuesto
+
+b. Revisar el BIOS para habilitar el LED
+
+c. Quitar el conector, invertirlo y volver a conectarlo
+
+d. Desconectar y reconectar la fuente de poder
+
+Estudiante: Danilo Unapucha
+
+- /Alternativa escogida:/ c
+- /Justificación técnica:/ Esto seria un buen primer paso ya que por
+  lo general se conectan mal estos conectores al tener polaridad ya si
+  después de esto sigue el mismo problema seria de preocuparse 
+
+Estudiante: Michael Sornoza
+
+- /Alternativa escogida:/ c
+- /Justificación técnica:/ Probablemente el LED no fue conectado correctamente y si bien es una mala
+  práctica  invertirlos resolvería el problema, lo ideal es ver el manual donde este el esquema para conectar bien los LED
+  en el curso mostraba un esquema que podiamos seguir para no tener errores. 
+
+Estudiante: Matías Palomeque
+
+- /Alternativa escogida:/ c
+- /Justificación técnica:/ El LED del panel frontal en una PC tiene
+  polaridad, por lo que si no funciona, lo más probable es que esté
+  conectado en sentido contrario. Es por esto, que es recomendable
+  invertir las conexiones y volver a probar.
+
+Estudiante: Sebastian Arevalo
+
+- /Alternativa escogida:/ c
+- /Justificación técnica:/ Cuando un led no prende lo mas probable es
+  que este conectado de manera invertida asi que el probar conectarlo
+  invirtiendo la polaridad podria arreglar el problema.
+
+
+- /Debate del grupo:/ [a completar]
+
+** Pregunta 6
+¿Por qué una GPU puede requerir un conector de alimentación PCIe adicional de la fuente de poder?
+
+a. Porque la ranura PCIe no transmite señal de video
+
+b. Porque las GPUs de alto rendimiento consumen más potencia de la que la ranura puede suministrar
+
+c. Porque el conector PCIe solo funciona con tarjetas de red
+
+d. Por el estándar de codificación de color de los cables SATA
+
+Estudiante: Danilo Unapucha
+
+- /Alternativa escogida:/ b
+- /Justificación técnica:/ Porque si solo se le suministra la energía
+  que viene del conector no es suficiente y la placa se sobre cargara
+  por eso se conecta directo a la fuente esto claro en GPUs de mas
+  alta gama
+
+Estudiante: Michael Sornoza
+
+- /Alternativa escogida:/ b
+- /Justificación técnica:/ Las tarjetas gráficas actuales usualmente necesitan más energía de las que
+  da la ranura por eso se las conecta directo a la fuente de alimentación, además es un dato muy importante
+  escoger una buena fuente para que de la suficiente energia a todos los componentes que saben consumir
+  mucha energia por sus características como la GPU.
+
+Estudiante: Matías Palomeque
+
+- /Alternativa escogida:/ b
+- /Justificación técnica:/ La ranura PCIe de la placa madre puede
+  suministrar una cantidad de energía limitada, pero las tarjetas
+  gráficas más actuales utilizan más potencia de la que pueden
+  suministrar. Es por esto que pueden requerir un conector extra, así
+  puede funcionar correctamente y cumplir todas sus funciones
+  
+Estudiante: Sebastian Arevalo
+
+- /Alternativa escogida:/ b
+- /Justificación técnica:/ LAs tarjetas graficas pueden consumir
+  cantidades muy grnades de energia haciendo que la que la energia
+  suministrada quede corta necesitando una coneccion extra
+  
+- /Debate del grupo:/ [a completar]
+
+* Parte C. Mantenimiento de computadores
+
+** 3.1 Insumos para mantenimiento preventivo
+   Liste al menos seis insumos y describa para qué sirve cada
+   uno. Revise el siguiente [[https://youtu.be/3ri1BMV7XTM?si=bjYoDUUKuMWwj4Qg][vídeo]].
+
+Estudiante: Danilo Unapucha
+   
+   | Insumo               | Uso principal                               |
+   |----------------------+---------------------------------------------|
+   | Aire comprimido      | Elimina el polvo en ventiladores            |
+   | Pasta Térmica        | Enfrían los componentes que generan calor   |
+   | Destornilladores     | Abren el gabinete y sueltan al procesador   |
+   | Alcohol Isopropilico | Limpia contactos y resto de pasta térmica   |
+   | Brocha Antiestática  | Remueve el polvo de zonas de la placa madre |
+   | Paño Micro fibra      | Limpieza carcasas sin dejar pelusas         |
+
+Estudiante: Michael Sornoza
+   
+   | Insumo                     | Uso principal                                                                                 |
+   |----------------------------+-----------------------------------------------------------------------------------------------|
+   | Compartmientos y etiquetas | Cuando se quita los tornillos y piezas es recomendado clasificarlos y nombrarlos              |
+   | Espuma limpiadora          | Se aplica con un cepillo en los coolers para remover suciedad entre aspas                     |
+   | Cinta resistente al calor  | Se coloca entre los ventiladores y las alteas del disipador (aprovecha todo el fluje de aire) |
+   | Thermal Putty              | Se aplica sobre las memorias VRAM y sobre la VRM                                              |
+   | Aspiradora                 | Es una buena alternativa para extrer toda la suciedad en la carcasa                           |
+   | Alchol isopropilico        | Ayuda a limpirar la pasta sobrante, y suciedad alojada en componentes                              |
+
+Estudiante: Matías Palomeque
+   
+   | Insumo                            | Uso principal                                                                          |
+   |-----------------------------------+----------------------------------------------------------------------------------------|
+   | Pulsera antiestática              | Evita que se acumule electricidad estática en el cuerpo                                |
+   | Aire Comprimido                   | Elimina el polvo entre los componentes de manera segura                                |
+   | Destornillador con punta Metálica | Se usa para abrir compartimientos cerrados con tornillos, la punta ayuda a sostenerlos |
+   | Pasta Térmica                     | Ayuda a distribuir el calor en los componentes de mejor manera                         |
+   | Pinzas de Precisión               | Se usan para poder sujetar componentes pequeños                                        |
+   | Espuma Limpiadora                 | Se utiliza para poder limpiar la suciedad entre las aspas de los ventiladores          |
+   |                                   |                                                                                        |
+
+Estudiante: Sebastian Arevalo
+   
+   | Insumo                            | Uso principal                                                                                      |
+   |-----------------------------------+----------------------------------------------------------------------------------------------------|
+   | Pasta termica                     | Ayuda a distribuir el calor desde el CPU hacia el disipador                                        |
+   | Cinta resistente al calor         | Ayuda a sostener siertas partes como el sistema de refrigeracion ya que resiste altas temperaturas |
+   | Alcohol isopropilico              | Con este se puede limpiar de manera profunda dispositivos electronicos sin dañar los circuitos     |
+   | Aire comprimido                   | Permite limpiar los ventiladores y partes dificiles de alcanzar llenas de polvo                    |
+   | Destornillador con punta metalica | Importante para abrir el dispostivo con facilidad y no perder los tornillos en el proseso          |
+   | THermal Putty                     | Grasa que ayuda con la disipacion del calor                                                        |
+   
+** 3.2 Procedimiento de limpieza — Desktop
+   1. Apagar completamente la computadora y desconectarla de corriente eléctrica
+   2. Desconectar la fuente de poder y retirar los cables necesarios 
+   3. Desconectar los ventiladores y demás componentes que eviten el
+      facil acceso al interior de la PC
+   4. Realizar la limpieza del polvo acumulado en los componentes,
+      especialmente de los ventiladores y la placa madre. Para esto es
+      recomendable utilizar aire comprimido
+   5. Limpiar la superficie de la CPU y GPU con alcohol isopropílico
+      para retirar restos de pasta térmica antigua. Luego, aplicar
+      nueva pasta térmica y reemplazar los pads térmicos de ser
+      necesario.
+   6. Utilizar una brocha antiestática para realizar una limpieza final
+      antes de reensamblar los componentes
+   7. Reconectar todos los componentes y verificar que las conexiones
+      estén correctamente instaladas antes de volver a enceder la computadora
+
+** 3.3 Procedimiento de limpieza — Laptop
+   1. Apagar correctamente el equipo y desconectarlo de la corriente
+   2. Desconectar la batería y cualquier cable que podría dañarse
+   4. Limpiar los componentes utilizando aire comprimido. Prestar
+      especial atención a lugares que tienen a acumularse de más
+      polvo, como los ventiladores, el disipador, la placa madre,
+      entre otros.
+   5. Limpiar la superficie de la CPU y GPU con alcohol
+      isopropílico. Luego, aplicar una nueva capa de pasta térmica.
+   6. Utilizar una brocha antiéstatica para realizar una limpieza
+      detallada final
+   7. Volver colocar a todos los componentes del equipo en su lugar y
+      verificar que las conexiones estén bien hechas antes de volver a
+      cerrar el computador.
+
+* Parte D. Aprendizaje obtenido
+
+** Integrante 1 Danilo Unapucha
+   - *¿Qué conocimiento nuevo obtuvo del curso?* Casi ninguno debido a
+     que previamente ya sabia mas o menos como es el mundo del
+     mantenimiento de las pc y laptops así que sacar el certificado no
+     me costo tanto 
+   - *¿Qué concepto corrigió o clarificó?* Algunos conceptos sobre
+     como funcionaban cada tecnología lo aclare y también como mejorar
+     a la limpieza que le hago a mi laptop ya que antes no sabia lo de
+     la pulsera antiestática
+
+** Integrante 2 Michael Sornoza
+   - *¿Qué conocimiento nuevo obtuvo del curso?* Aprendí componentes de las
+     computadoras de escritorio, laptop, además aprendí sobre otros dispositivos
+     y sus usos como tablets, celulares inteligetes, relojs inteligentes. Lo
+     más importante que me enseñó el curso es sobre el mantenimiento (herramientas y medidas de seguridad)
+   - *¿Qué concepto corrigió o clarificó?* Las medidas de seguridad y la banda electroestática
+     son cosas que no sabía y si hubiera hecho mantenimiento a mi laptop probablemente
+     hubiera dañado agún componente. 
+
+** Integrante 3 Matías Palomeque
+   - *¿Qué conocimiento nuevo obtuvo del curso?* Conocí como están
+     colocados los componentes internamente dentro de una computadora,
+     y como desensamblar y reensamblar un gabinete. Además, aprendí
+     sobre precauciones que se debe tomar al momento de manejar
+     componentes electrónicos delicados como la placa madre.
+   - *¿Qué concepto corrigió o clarificó?* Entendí mejor para que se
+     utiliza cada uno de los conectores dentro de una placa madre, y
+     que cada cosa tiene un fin dentro de la computadora
+
+     ** Integrante 4 Sebastian Arevalo
+   - *¿Qué conocimiento nuevo obtuvo del curso?* Aprendi sobre las
+     herramientas que deberia usar al momento de dar mantenimiento a
+     un computador o laptop ya que desconocia acerca de los equipos
+     anti estaticos o de la pasta Putty.
+   - *¿Qué concepto corrigió o clarificó?* Comprendi mejor como dar
+     mantenimiento aun computador sin comprometer las piezas internas
+     del mismo además de aclarar ciertos conceptos con los puertos de
+     algunos componentes.
+* Rúbrica de evaluación
+
+  | Criterio                               | Puntaje máximo |
+  |----------------------------------------+----------------|
+  | Certificados individuales completos    |             20 |
+  | Cuestionario: respuesta correcta (x8)  |             30 |
+  | Cuestionario: argumento técnico (x8)   |             30 |
+  | Mantenimiento (tabla + procedimientos) |             20 |
+  | TOTAL                                  |            100 |
+
+* ¿Cómo referenciar en Emacs?
+Para insertar una referencia a un recurso bibliográfico
+1. Puede actualizar el archivo ~../bibliography/bibliography.bib~
+2. Escribir en formato **BibTeX** el recurso bibliográfico
+3. Verifique la siguiente configuración al encabezado:
+   #+begin_src org
+   #+cite_export: biblatex
+   #+LATEX_HEADER: \usepackage[backend=biber, style=ieee]{biblatex}
+   #+BIBLIOGRAPHY: ../bibliography/bibliography.bib
+   #+end_src
+4. Usar ~M-x org-cite-insert~ para insertar una cita. Aparecerá una
+   lista. Use los cursores para seleccionar la cita. Ejecute ~C-RET~: /De acuerdo con
+   [cite:@ledin2022modern], la arquitectura ...../
+5. Revise que al final del documento exista ~#+print_bibliography:~
+6. **Sugerencia:** Para evitar repetir varias veces el proceso de
+   exportación, es recomendable cambiar el compilador de \LaTeX a
+   ~latexmk~. Para esto:
+   - ~sudo apt install latexmk~
+   - Revise en el encabezado del ~.org~ que el compilador escogido sea
+     ~#+LATEX_COMPILER: latexmk~. También puede modificar el archivo
+     ~init.el~ para indicar qué compilador se usa para exportar de
+     ~.org~ a /LaTeX/:
+     #+begin_src elisp
+;; 4.7b Proceso de compilación con latexmk para Org-export
+(with-eval-after-load 'ox-latex
+  (setq org-latex-pdf-process
+        '("latexmk -f -pdf -%latex -interaction=nonstopmode -output-directory=%o %f")))
+
+;; 4.7c Org-cite: biblatex como procesador para exportación LaTeX
+(with-eval-after-load 'oc
+  (setq org-cite-export-processors
+        '((latex biblatex)
+          (t basic))))
+
+     #+end_src
+* Verificación de Entregables [100%]:
+Ejecute ~C-c C-c~ sobre los ítems de tarea según se hayan cumplido o
+no. Si un ítem no pudo realizarse apunte en la siguiente sección las
+razones al respecto.
+- [X] Los enlaces a los certificados en el documento ~.org~ funcionan.
+- [X] Resolución completa del Cuestionario2.
+- [X] Revisión del vídeo sobre mantenimiento a computador ASUS. 
+- [X] Tutorial de Comandos Emacs realizado.
+- [X] Lista de insumos para mantenimiento completa.
+- [X] Procedimiento de mantenimiento para desktop completo.
+- [X] Procedimiento de mantenimiento para laptop completo.
+- [X] Revisión de ortografía con ~ispell-buffer~ en el buffer
+- [X] Generación de Archivo PDF ~M-x org-latex-export-to-pdf~
+- [X] Subir al aula virutal archivo ~.org~ y ~.pdf~
+
+#+print_bibliography:
