@@ -1,0 +1,377 @@
+#+options: ':nil *:t -:t ::t <:t H:3 \n:nil ^:t arch:headline
+#+options: author:t broken-links:nil c:nil creator:nil
+#+options: d:(not "LOGBOOK") date:t e:t email:nil expand-links:t f:t
+#+options: inline:t num:t p:nil pri:nil prop:nil stat:t tags:t
+#+options: tasks:t tex:t timestamp:t title:t toc:nil todo:t |:t
+#+title: Taller de Configuracion de Entorno WSL
+#+date: 2026-04-11
+#+author: Danilo Unapucha, Michael Sornoza, Martin Arevalo, Matías Palomeque
+#+email: danilo.unapucha@epn.edu.ec, martin.arevalo@epn.edu.ec, michael.sornoza@epn.edu.ec, matias.palomeque@epn.edu.ec
+#+language: Espanol
+#+select_tags: export
+#+exclude_tags: noexport
+#+creator: Emacs 27.1 (Org mode 9.7.5)
+* Actividades
+** Configuración de WSL con Ubuntu, LaTeX, Python e Emacs
+Danilo Unapucha
+1. Verificación de entorno mamba/anaconda
+    #+begin_src shell :exports both :results verbatim
+     mamba info
+    #+end_src
+
+
+2. Verificación de Python
+ #+begin_src shell :exports both :results verbatim
+ python3 --version
+ #+end_src
+
+
+
+3. Verificación de Emacs
+ #+begin_src shell :exports both :results verbatim
+ emacs --version 
+ #+end_src
+
+ 
+4. Verificación de LaTeX
+ #+begin_src shell :exports both :results verbatim
+ latex --version
+ #+end_src
+
+
+Sebastian Arevalo
+1. Verificación de entorno mamba/anaconda
+ #+begin_src shell :exports both :results verbatim
+mamba info
+#+end_src
+
+ #+RESULTS:
+ #+begin_example
+
+        libmamba version : 2.5.0
+           mamba version : 2.5.0
+            curl version : libcurl/8.19.0 OpenSSL/3.6.1 zlib/1.3.2 zstd/1.5.7 libssh2/1.11.1 nghttp2/1.68.1 mit-krb5/1.22.2
+      libarchive version : libarchive 3.8.6 zlib/1.3.2 liblzma/5.8.2 bz2lib/1.0.8 liblz4/1.10.0 libzstd/1.5.7 liblzo2/2.10 openssl/3.5.5 libb2/bundled
+        envs directories : /home/sebastian/miniforge3/envs
+           package cache : /home/sebastian/miniforge3/pkgs
+                           /home/sebastian/.mamba/pkgs
+             environment : iccd332 (active)
+            env location : /home/sebastian/miniforge3/envs/iccd332
+       user config files : /home/sebastian/.mambarc
+  populated config files : /home/sebastian/miniforge3/.condarc
+        virtual packages : __unix=0=0
+                           __linux=6.6.87=0
+                           __glibc=2.39=0
+                          __archspec=1=x86_64_v3
+                channels : https://conda.anaconda.org/conda-forge/linux-64
+                           https://conda.anaconda.org/conda-forge/noarch
+        base environment : /home/sebastian/miniforge3
+                platform : linux-64
+ #+end_example
+2. Verificación de Python
+ #+begin_src shell :exports both :results verbatim
+ python --version
+ #+end_src
+
+ #+RESULTS:
+ : Python 3.14.4
+3. Verificación de Emacs
+ #+begin_src shell :exports both :results verbatim
+ emacs --version
+ #+end_src
+
+ #+RESULTS:
+ : GNU Emacs 29.3
+ : Copyright (C) 2024 Free Software Foundation, Inc.
+ : GNU Emacs comes with ABSOLUTELY NO WARRANTY.
+ : You may redistribute copies of GNU Emacs
+ : under the terms of the GNU General Public License.
+ : For more information about these matters, see the file named COPYING.
+4. Verificación de LaTeX
+ #+begin_src shell :exports both :results verbatim
+ latex --version
+ #+end_src
+
+ #+RESULTS:
+ #+begin_example
+ pdfTeX 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian)
+ kpathsea version 6.3.5
+ Copyright 2023 Han The Thanh (pdfTeX) et al.
+ There is NO warranty.  Redistribution of this software is
+ covered by the terms of both the pdfTeX copyright and
+ the Lesser GNU General Public License.
+ For more information about these matters, see the file
+ named COPYING and the pdfTeX source.
+ Primary author of pdfTeX: Han The Thanh (pdfTeX) et al.
+ Compiled with libpng 1.6.43; using libpng 1.6.43
+ Compiled with zlib 1.3; using zlib 1.3
+ Compiled with xpdf version 4.04
+ #+end_example
+
+Michael Sornoza
+1. Verificación de entorno mamba/anaconda
+  #+begin_src shell :exports both :results verbatim
+  mamba info
+  #+end_src
+
+  #+RESULTS:
+  #+begin_example
+
+	 libmamba version : 2.5.0
+	    mamba version : 2.5.0
+	     curl version : libcurl/8.19.0 OpenSSL/3.6.1 zlib/1.3.2 zstd/1.5.7 libssh2/1.11.1 nghttp2/1.68.1 mit-krb5/1.22.2
+       libarchive version : libarchive 3.8.6 zlib/1.3.2 liblzma/5.8.2 bz2lib/1.0.8 liblz4/1.10.0 libzstd/1.5.7 liblzo2/2.10 openssl/3.5.5 libb2/bundled
+	 envs directories : /home/mick/miniforge3/envs
+	    package cache : /home/mick/miniforge3/pkgs
+			    /home/mick/.mamba/pkgs
+	      environment : iccd332 (active)
+	     env location : /home/mick/miniforge3/envs/iccd332
+	user config files : /home/mick/.mambarc
+   populated config files : /home/mick/miniforge3/.condarc
+	 virtual packages : __unix=0=0
+			    __linux=6.6.87=0
+			    __glibc=2.39=0
+			    __archspec=1=x86_64_v3
+			    __cuda=13.2=0
+		 channels : https://conda.anaconda.org/conda-forge/linux-64
+			    https://conda.anaconda.org/conda-forge/noarch
+	 base environment : /home/mick/miniforge3
+		 platform : linux-64
+  #+end_example
+
+  
+
+2. Verificación de Python
+ #+begin_src shell :exports both :results verbatim
+ python3 --version
+ #+end_src
+
+ #+RESULTS:
+ : Python 3.14.4
+
+3. Verificación de Emacs
+ #+begin_src shell :exports both :results verbatim
+ emacs --version
+ #+end_src
+
+ #+RESULTS:
+ : GNU Emacs 29.3
+ : Copyright (C) 2024 Free Software Foundation, Inc.
+ : GNU Emacs comes with ABSOLUTELY NO WARRANTY.
+ : You may redistribute copies of GNU Emacs
+ : under the terms of the GNU General Public License.
+ : For more information about these matters, see the file named COPYING.
+
+4. Verificación de LaTeX
+ #+begin_src shell :exports both :results verbatim
+ latex --version
+ #+end_src
+
+ #+RESULTS:
+ #+begin_example
+ pdfTeX 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian)
+ kpathsea version 6.3.5
+ Copyright 2023 Han The Thanh (pdfTeX) et al.
+ There is NO warranty.  Redistribution of this software is
+ covered by the terms of both the pdfTeX copyright and
+ the Lesser GNU General Public License.
+ For more information about these matters, see the file
+ named COPYING and the pdfTeX source.
+ Primary author of pdfTeX: Han The Thanh (pdfTeX) et al.
+ Compiled with libpng 1.6.43; using libpng 1.6.43
+ Compiled with zlib 1.3; using zlib 1.3
+ Compiled with xpdf version 4.04
+ #+end_example
+
+Matías Palomeque
+1. Verificación de entorno mamba/anaconda
+ #+begin_src shell :exports both :results verbatim
+     mamba info
+    #+end_src
+
+   #+RESULTS:
+   #+begin_example
+
+	  libmamba version : 2.5.0
+	     mamba version : 2.5.0
+	      curl version : libcurl/8.19.0 OpenSSL/3.6.1 zlib/1.3.2 zstd/1.5.7 libssh2/1.11.1 nghttp2/1.68.1 mit-krb5/1.22.2
+	libarchive version : libarchive 3.8.6 zlib/1.3.2 liblzma/5.8.2 bz2lib/1.0.8 liblz4/1.10.0 libzstd/1.5.7 liblzo2/2.10 openssl/3.5.5 libb2/bundled
+	  envs directories : /home/matypb-epn/.local/share/mamba/envs
+	     package cache : /home/matypb-epn/.local/share/mamba/pkgs
+			     /home/matypb-epn/.mamba/pkgs
+	       environment : iccd332 (active)
+	      env location : /home/matypb-epn/.local/share/mamba/envs/iccd332
+	 user config files : /home/matypb-epn/.mambarc
+    populated config files : 
+	  virtual packages : __unix=0=0
+			     __linux=6.6.87=0
+			     __glibc=2.39=0
+			     __archspec=1=x86_64_v3
+		  channels : https://conda.anaconda.org/conda-forge/linux-64
+			     https://conda.anaconda.org/conda-forge/noarch
+	  base environment : /home/matypb-epn/.local/share/mamba
+		  platform : linux-64
+   #+end_example
+   
+2. Verificación de Python
+ #+begin_src shell :exports both :results verbatim
+ python3 --version
+ #+end_src
+
+ #+RESULTS:
+ : Python 3.11.15
+
+3. Verificación de Emacs
+ #+begin_src shell :exports both :results verbatim
+ emacs --version 
+ #+end_src
+ 
+ #+RESULTS:
+ : GNU Emacs 29.3
+ : Copyright (C) 2024 Free Software Foundation, Inc.
+ : GNU Emacs comes with ABSOLUTELY NO WARRANTY.
+ : You may redistribute copies of GNU Emacs
+ : under the terms of the GNU General Public License.
+ : For more information about these matters, see the file named COPYING.
+
+4. Verificación de LaTeX
+ #+begin_src shell :exports both :results verbatim
+ latex --version
+ #+end_src
+
+ #+RESULTS:
+ #+begin_example
+ pdfTeX 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian)
+ kpathsea version 6.3.5
+ Copyright 2023 Han The Thanh (pdfTeX) et al.
+ There is NO warranty.  Redistribution of this software is
+ covered by the terms of both the pdfTeX copyright and
+ the Lesser GNU General Public License.
+ For more information about these matters, see the file
+ named COPYING and the pdfTeX source.
+ Primary author of pdfTeX: Han The Thanh (pdfTeX) et al.
+ Compiled with libpng 1.6.43; using libpng 1.6.43
+ Compiled with zlib 1.3; using zlib 1.3
+ Compiled with xpdf version 4.04
+ #+end_example
+
+** Comandos emacs tutorial
+Danilo Unapucha
+| Comando | Descripción                                                                                       | Comando | Descripción                                                                                  |
+|---------+---------------------------------------------------------------------------------------------------+---------+----------------------------------------------------------------------------------------------|
+| C-l     | Me ayuda a ver de mejor manera el texto ya que me lo pone arriba o en la mitad o abajo            | C-k     | Ayuda mucho al poder eliminar toda la linea en la que me encuentro                              |
+| M-k     | Este elimina toda una oración y ayuda bastante al eliminar todo un párrafo si no se esta conforme | C-g     | Este es el mas importante ya que cierra el minibuffer o el comando para sacarnos de un apuro |
+
+Sebastian Arevalo
+| Comando | Descripción                                                                                    | Comando | Descripción                                              |
+|---------+------------------------------------------------------------------------------------------------+---------+----------------------------------------------------------|
+| C-d     | Sirve para suprimir un carácter en el que estoy trabajando muy útil en refacción.              | M-w     | Permite tener la función de copiar texto seleccionado    |
+| C-a     | Es bastante útil a la hora de programar de manera en la que no debes buscar el inicio de linea | C-y     | Ayuda muchísimo al dar la función de pegar texto copiado |
+
+Michael Sornoza
+
+| Comando   | Descripción                  | Comando | Descripción                                                   |
+|-----------+------------------------------+---------+---------------------------------------------------------------|
+| C-<SPACE> | Me ayuda a seleccionar texto | M-<     | Te regresa al principio del documento es como la tecla inicio |
+| C-x C-f   | Permite abrir un archivo     | C-x b   | Cambiar entre buffers                                         |
+
+Matias Palomeque
+| Comando | Descripción                                                   | Comando | Descripción                                                   |
+|---------+---------------------------------------------------------------+---------+---------------------------------------------------------------|
+| C-n     | Avanza una línea. Permite buscar información de manera rápida | C-v     | Avanza una página. Permite leer un texto de manera más rápida |
+| M-e     | Mueve al cursor al inicio de la siguiente oración             | C-u     | Permite darle un parámetro numérico a ciertos comandos.       |
+
+
+** Comandos Emacs Juego
+Danilo Unapucha
+| Iteración | Puntaje |
+|-----------+---------|
+|         1 |     140 |
+|         2 |     140 |
+|         3 |     140 |
+1. Iteración 1
+   [[./images/juego1.png]]
+2. Iteración 2
+   [[./images/juego2.png]]
+3. Iteración 3
+   [[./images/juego3.png]]
+
+Sebastian Arevalo
+| Iteración | Puntaje |
+|-----------+---------|
+|         1 |     130 |
+|         2 |     130 |
+|         3 |     125 |
+1. Iteración 1
+   [[./images/Juego1_Sebas.png]]
+2. Iteración 2
+   [[./images/Juego2_Sebas.png]]
+3. Iteración 3
+   [[./images/Juego3_Sebas.png]]
+        
+
+Michael Sornoza
+| Iteración | Puntaje |
+|-----------+---------|
+|         1 |     122 |
+|         2 |     140 |
+|         3 |     140 |
+
+1. Iteración 1
+   [[./images/juego1_michael.png]]
+2. Iteración 2
+   [[./images/juego2_michael.png]]
+3. Iteración
+   [[./images/juego3_michael.png]]
+   
+Matías Palomeque
+| Iteración | Puntaje |
+|-----------+---------|
+|         1 |     128 |
+|         2 |     128 |
+|         3 |     140 |
+
+1. Iteración 1
+   [[./images/juego10.png]]
+2. Iteración 2
+   [[./images/juego11.png]]
+3. Iteración 3
+   [[./images/juego12.png]]
+   
+   
+** Usando Emacs para tener Ayuda sobre Emacs
+**Comandos Fáciles**
+1. **Danilo Unapucha** C-n. Move cursor vertically down ARG lines.
+2. **Sebastian Arevalo** C-x C-s Save currend buffer
+3. **Michael Sornoza** C-a. Runs the command org-beginning-of-line (found in org-mode-map).
+4. **Matias Palomeque** M-f. Move point forward ARG words (backward if ARG is negative).
+
+**Comandos Dificiles**
+1. **Danilo Unapucha** C-v. Scroll text of selected window upward ARG lines; or near full screen if no ARG.
+2. **Sebastian Arevalo** C-k kill or remove de line where the cursor is at.
+3. **Michael Sornoza** C-u Runs the command universal-argument (found in global-map), which is an interactive native-compiled Lisp function in ‘simple.el’.
+4. **Matias Palomeque** C-/. Undo some previous changes.
+** Equipo de Trabajo
+| Nombre            | email                       | Rol         |
+|-------------------+-----------------------------+-------------|
+| Danilo Unapucha   | danilo.unapucha@epn.edu.ec  | Lider       |
+|                   |                             |             |
+|                   |                             |             |
+| Matías Palomeque  | matias.palomeque@epn.edu.ec | Colaborador |
+|                   |                             |             |
+|                   |                             |             |
+| Sebastian Arevalo | martin.arevalo@epn.edu.ec   | Colaborador |
+|                   |                             |             |
+|                   |                             |             |
+| Michael Sornoza   | michael.sornoza@epn.edu.ec  | Colaborador |
+
+
+** Verificación de Entregables
+- [X] Verificación de configuración de entorno WSL y paquetes del curso.
+- [X] Tutorial de Comandos Emacs realizado.
+- [X] Captura de Imágenes y puntajes de Emacs Trainer App.
+- [X] Usando Emacs para tener ayuda sobre Emacs
+- [X] Verifique que estén los nombres de los integrantes del equipo e identificado el líder.
+- [X] Revisión de ortografía con ispell en el buffer
+- [X] Generación de Archivo PDF M-x org-latex-export-to-pdf
+  
