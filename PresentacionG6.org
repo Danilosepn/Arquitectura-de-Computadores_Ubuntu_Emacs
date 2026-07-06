@@ -150,7 +150,53 @@ variaciones fundamentales según su capacidad de alternación
   metálica de fase capaz de alternar entre un estado cristalino
   reflectante y amorfo absorbente.
   
-  
+* DVD (Disco Digital  Versátil) 
+
+** Cambios en la llegada del DVD 
+:PROPERTIES:
+:BEAMER_env: block
+:END:
+- Sustituto de las cintas VHS de video analógicas.
+- Sustituye a las sintas de video usadas en los resprodcutores de video (VCR).
+- Sustituye al CD-ROM en los PC y servidores.
+
+** Ventajas 
+:PROPERTIES:
+:BEAMER_env: block
+:END:
+- Proporciona películas con una calidad de imagen impresionante, y se puede
+  acceder a ellos aleatoriamente como en los CD de audio, que también pueden leer los DVD.
+- En un disco se puede grabar un gran volumen de datos, en la actualidad siete veces más que en un CD-ROM
+- Los juegos para PC serán más reales y el software educativo incorporará más vídeo.
+  Como (habrá un nuevo pico en el tráfico en Internet e intranets corporativas, ya que este material se incorporará a los sitios web)  
+
+** Capacidad del DVD 
+- Los bits se empaquetan más juntos en un DVD. El espacio entre las vueltas de una espiral en un CD es de 1,6 μm y la distancia mínima entre hoyos a lo largo de la espiral es de 0,834 μm.
+- El DVD utiliza un láser con una longitud de onda menor y consigue un espaciado entre vueltas de 0,74 μm y una distancia mínima entre hoyos de 0,4 μm.
+- El resultado de estas dos mejoras supone un incremento de capacidad en un factor de siete, de alrededor de \textbf{4,7 GB}.
+- El DVD utiliza una segunda capa de hoyos y valles sobre la primera capa. Un DVD de doble capa tiene una capa semirreflectante sobre la capa reflectante, ajustando el enfoque, el láser puede leer cada capa por separado. Capacidad hasta \textbf{8,5 GB}.
+- El DVD-ROM puede tener dos superficies, mientras que en un CD los datos se graban solo en una superficie. Esto da una capacidad total de más de \textbf{17 GB}.
+
+
+* Discos Ópticos de ALta Definición 
+** Característcias 
+:PROPERTIES:
+:BEAMER_env: block
+:END:
+- Diseñados para vídeo de alta definición y mayor capacidad que el DVD.
+- Usan láser de longitud de onda corta (azul-violeta) para mayor densidad de bits.
+- Dos formatos compitieron: \textbf{HD DVD} y \textbf{Blu-ray}.
+
+** Blue-ray 
+:PROPERTIES:
+:BEAMER_env: block
+:END:
+- Logró la dominancia del mercado.
+- Capa de datos más cerca del láser: pistas e impresiones más pequeñas.
+- Capacidad de \textbf{25 GB} por capa.
+- Tres versiones: \textbf{BD-ROM} (solo lectura), \textbf{BD-R} (grabable una vez), \textbf{BD-RE} (regrabable).
+
+
 
 * michael
 ** michael
