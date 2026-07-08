@@ -26,41 +26,45 @@
 
 # PARTE NICOLE
 # SUBTEMA 1
-* Memoria Externa del Sistema
-** sebas
-El almacenamiento magnético se encuentra entre una cabeza conductora y
-un plato que gira.
-
-**Procesos de escritura**
-- Principio físico: Se basa en el electromagnetismo, es decir, que
-  mediante una corriente eléctrica se genera un campo magnético.
-- Grabación de datos: Para poder escribir, se envían impulsos
-  eléctricos.
-- Representación de bits: Se refiere a la variación del campo
-  magnético inducido que representan los patrones de bits lógicos en
-  la superficie.
-
-**Proceso de lectura**
-- Mecanismo tradicional: Procesos inversos a la lectura.
-- Evolución: La cabeza de lectura MR utiliza un sensor cuya
-  resistencia cambia según la dirección del campo magnético.
-
+* Discos de estado solido
+** Discos de estado solido
+Un disco de estado solido es formado a partir de componentes de estado
+solido lo que significa que usan semiconductores de elementos solidos
+como la silicona o galio. Estas memorias tienen chips basados en NANDS
+\textbf{Ventajas del los discos de estado solido:}
+- \textbf{Velocidad:} Tienen una velocidad de copiado generalmente de
+  200 a 550 Mbps bastante mas rapida que los 50 a 120 Mbps de los
+  discos duros. 
+- \textbf{Uso de energia:} En promedio consumen 2-3 watts prologando
+  la duracion de la bateria.
+\textbf{Desventajas de los discos de esado solido:}
+- \textbf{Capacidad:} Normalmente tienen mas capacidad que los discos
+  duros en laptos pero en computadoras de escritorio los discos duros
+  ganan en este aspecto. 
+- \textbf{Costo:} Aproximadamente custan $0.17 por Gb que los discos
+  de estado solido.
 # SUBTEMA 2
-* sebas
-** sebas
+* Organizacion de un disco de estado solido
+** Organizacion de un disco de estado solido
 *** texto :BMCOL:
 :PROPERTIES:
 :BEAMER_COL: 0.6
 :END:
-- Pistas: La superficie de plato se organiza de forma lógica en miles
-  de anillos concéntricos invisibles.
-- Sectores: cada pista se divide en secciones fijas.
-- Gaps: La pista y los sectores no están pegados entre sí.
-- Formato de velocidad angular constante: El disco gira a una
-  velocidad fija.
-- Información de control: Cada sector incluye bytes adicionales que el
-  usuario no ve.
-
+#+BEGIN_EXPORT latex
+\centering
+\includegraphics[width=1\linewidth]{iamges/organizacion_ssd.png}
+#+END_EXPORT
+- \textbf{Interface:} Es la parte que conecta de maenra logica el ssd
+  con el sistema host.
+- \textbf{Controller:} Provee ejecucion del firmware.
+- \textbf{Direccionador:} Provee la logica de seleccionamiento de los
+  chips NANDS
+- \textbf{Cache:} Chache del sistema de memoria para tener mayor
+  velocidad.
+- \textbf{Correccion de errores:} Componente que se encarga de
+  detectar y corregir errores.
+- \textbf{Componentes de memoria flash:} Son los chips NANDS
+  encargados de guardar la informacion.
 *** Imagen :BMCOL:Imagen:
 :PROPERTIES:
 :BEAMER_COL: 0.4
