@@ -75,7 +75,7 @@ archivo usando ~C-c C-l~ o usando ~[[./carpeta-certificados/cert-int1.pdf]]~
      
 #+caption: Certificado de Aprobación - Danilo Unapucha
 #+attr_latex: :width 0.75\textwidth :center t
-#+label: fig:certificado-integrante 1
+#+label: fig:certificado-integrante-1
 [[./images/Danilo_Certificado.jpg]]
      
 2. Integrante 2

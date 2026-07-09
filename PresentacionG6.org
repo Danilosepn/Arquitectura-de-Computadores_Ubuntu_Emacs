@@ -44,55 +44,56 @@ como la silicona o galio. Estas memorias tienen chips basados en NANDS
 - \textbf{Costo:} Aproximadamente custan $0.17 por Gb que los discos
   de estado solido.
 # SUBTEMA 2
-* Organizacion de un disco de estado solido
-** Organizacion de un disco de estado solido
+* Organización de un disco de estado solido
+** Organización de un disco de estado solido
+:PROPERTIES:
+:BEAMER_OPT: shrink=15
+:END:
 *** texto :BMCOL:
 :PROPERTIES:
-:BEAMER_COL: 0.6
+:BEAMER_COL: 0.55
 :END:
-#+BEGIN_EXPORT latex
-\centering
-\includegraphics[width=1\linewidth]{iamges/organizacion_ssd.png}
-#+END_EXPORT
-- \textbf{Interface:} Es la parte que conecta de maenra logica el ssd
+- \textbf{Interface:} Es la parte que conecta de manera lógica el ssd
   con el sistema host.
 - \textbf{Controller:} Provee ejecucion del firmware.
-- \textbf{Direccionador:} Provee la logica de seleccionamiento de los
+- \textbf{Direccionador:} Provee la lógica de seleccionamiento de los
   chips NANDS
-- \textbf{Cache:} Chache del sistema de memoria para tener mayor
+- \textbf{Cache:} Cache del sistema de memoria para tener mayor
   velocidad.
 - \textbf{Correccion de errores:} Componente que se encarga de
   detectar y corregir errores.
 - \textbf{Componentes de memoria flash:} Son los chips NANDS
-  encargados de guardar la informacion.
+  encargados de guardar la información.
 *** Imagen :BMCOL:Imagen:
 :PROPERTIES:
-:BEAMER_COL: 0.4
+:BEAMER_COL: 0.45
 :END:
-
 #+BEGIN_EXPORT latex
-\centering
-\includegraphics[width=1\linewidth]{imagenes/cinta_magnetica.png}
+\begin{center}
+\includegraphics[width=0.8\linewidth]{images/organizacion_ssd.png}
+\end{center}
 #+END_EXPORT
 
 # Danilo
 * Problemas Prácticos
 ** Problemas Prácticos
+:PROPERTIES:
+:BEAMER_OPT: shrink=20
+:END:
 La naturaleza electrónica de las celdas Flash NAND introduce
 restricciones físicas y operativas muy especificas en el hardware.
 
 \textbf{Desafíos del medio semiconductor:}
-- \textbf{ciclos P/E limitados:} Las celdas sufren un desgaste físicos
+- \textbf{ciclos P/E limitados:} Las celdas sufren un desgaste físico
 irreversible en su capa aislante tras un numero fijo de escrituras o
 borrados. 
 - \textbf{Asimetría de bloques y paginas:} Las lecturas y escrituras
   se ocurren a nivel de bloques completos.
-- \textbf{Wear Living:} Algoritmo integrado en el controlador para
+- \textbf{Wear Leveling:} Algoritmo integrado en el controlador para
   distribuir de manera homogénea las escrituras en todo el medio y
   evitar sectores muertos prematuros 
 - \textbf{Gestión de bloques dañados:} Aislamiento lógico dinámico de
   celdas fallidas para resguardar la integridad de los datos útiles.
-- 
 *** Ampliación de escritura
 Debido a la imposibilidad de sobrescribir datos en una pagina
 directamente sin limpiar previamente todo su bloque contenedor, se
@@ -137,8 +138,9 @@ concentrados sobre una pista continua en espiral.
 :END:
 
 #+BEGIN_EXPORT latex
-\centering
-|includegraphics[width=1\linewidth]{imagenes/pits_lands.png}
+\begin{center}
+\includegraphics[width=1\linewidth]{images/Danilo_imgagen.jpeg}
+\end{center}
 #+END_EXPORT
 
 ** Variables del Formato CD
@@ -150,7 +152,7 @@ variaciones fundamentales según su capacidad de alternación
 - \textbf{CD-R:} Disco grabable una única vez,  contiene una capa
   intermedia de tinte orgánico translúcido que el láser quema a alta
   potencia para emular opticamente un pit.
-- \textbf{CD-RW:} Medio regrábale estructurado con una aleación
+- \textbf{CD-RW:} Medio regrabable estructurado con una aleación
   metálica de fase capaz de alternar entre un estado cristalino
   reflectante y amorfo absorbente.
   
@@ -161,7 +163,7 @@ variaciones fundamentales según su capacidad de alternación
 :BEAMER_env: block
 :END:
 - Sustituto de las cintas VHS de video analógicas.
-- Sustituye a las sintas de video usadas en los resprodcutores de video (VCR).
+- Sustituye a las cintas de video usadas en los reproductores de video (VCR).
 - Sustituye al CD-ROM en los PC y servidores.
 
 ** Ventajas 
@@ -173,17 +175,25 @@ variaciones fundamentales según su capacidad de alternación
 - En un disco se puede grabar un gran volumen de datos, en la actualidad siete veces más que en un CD-ROM
 - Los juegos para PC serán más reales y el software educativo incorporará más vídeo.
   Como (habrá un nuevo pico en el tráfico en Internet e intranets corporativas, ya que este material se incorporará a los sitios web)  
-
+  
 ** Capacidad del DVD 
-- Los bits se empaquetan más juntos en un DVD. El espacio entre las vueltas de una espiral en un CD es de 1,6 μm y la distancia mínima entre hoyos a lo largo de la espiral es de 0,834 μm.
-- El DVD utiliza un láser con una longitud de onda menor y consigue un espaciado entre vueltas de 0,74 μm y una distancia mínima entre hoyos de 0,4 μm.
+:PROPERTIES:
+:BEAMER_OPT: shrink=15
+:END:
+- Los bits se empaquetan más juntos en un DVD. El espacio entre las vueltas de una espiral en un CD es de 1,6 µm y la distancia mínima entre hoyos a lo largo de la espiral es de 0,834 µm.
+- El DVD utiliza un láser con una longitud de onda menor y consigue un espaciado entre vueltas de 0,74 µm y una distancia mínima entre hoyos de 0,4 µm.
 - El resultado de estas dos mejoras supone un incremento de capacidad en un factor de siete, de alrededor de \textbf{4,7 GB}.
 - El DVD utiliza una segunda capa de hoyos y valles sobre la primera capa. Un DVD de doble capa tiene una capa semirreflectante sobre la capa reflectante, ajustando el enfoque, el láser puede leer cada capa por separado. Capacidad hasta \textbf{8,5 GB}.
 - El DVD-ROM puede tener dos superficies, mientras que en un CD los datos se graban solo en una superficie. Esto da una capacidad total de más de \textbf{17 GB}.
 
+#+BEGIN_EXPORT latex
+\begin{center}
+\includegraphics[width=0.45\linewidth]{images/DVD.png}
+\end{center}
+#+END_EXPORT
 
-* Discos Ópticos de ALta Definición 
-** Característcias 
+* Discos Ópticos de Alta Definición 
+** Características 
 :PROPERTIES:
 :BEAMER_env: block
 :END:
@@ -194,220 +204,15 @@ variaciones fundamentales según su capacidad de alternación
 ** Blue-ray 
 :PROPERTIES:
 :BEAMER_env: block
+:BEAMER_OPT: shrink=15
 :END:
 - Logró la dominancia del mercado.
 - Capa de datos más cerca del láser: pistas e impresiones más pequeñas.
 - Capacidad de \textbf{25 GB} por capa.
 - Tres versiones: \textbf{BD-ROM} (solo lectura), \textbf{BD-R} (grabable una vez), \textbf{BD-RE} (regrabable).
 
-
-
-* michael
-** michael
-Varios discos físicos que el SO ve como una unidad lógica. \\
-\vspace{0.3cm}
-**Doble estrategia:** \\
-\hspace{0.5cm} \textcolor{blue}{Paralelismo: }Con varios discos, las
-peticiones separadas de E/S se pueden gestionar en paralelo. \\
-\hspace{0.5cm} \textcolor{blue}{Redundancia: }Para guardar información
-de paridad y recuperar datos si un disco falla. \\
-\vspace{0.3cm}
-**Niveles:** Existen 6 métodos (0 al 5) para organizar estos datos. \\
-\vspace{0.5cm}
-
 #+BEGIN_EXPORT latex
-\begin{definition}
-El nivel cero no soporta la redundancia
-\end{definition}
-#+END_EXPORT
-
-# RAID CERO
-** RAID 0: Máximo Rendimiento (Sin Redundancia)
-\textcolor{blue}{Striping: Segmentación de datos en tiras} \\
-\vspace{0.5cm}
-Organización: Los datos se proyectan cíclicamente en miembros
-consecutivos del conjunto. \\
-\hspace{0.5cm} \textcolor{blue}{Tira: }Unidad de almacenamiento
-(bloque/sector). \\
-\hspace{0.5cm} \textcolor{blue}{Franja: }Conjunto de tiras lógicamente
-consecutivas en cada miembro del conjunto. \\
-\vspace{0.5cm}
-Ventaja: Si hay peticiones de E/S pendientes,
-se pueden gestionar en **paralelo**, reduciendo el tiempo de cola.
-
-#+BEGIN_EXPORT latex
-\begin{definition}
-No incluye redundancia; si hay un fallo de disco, no permite la recuperación de datos perdidos.
-\end{definition}
-#+END_EXPORT
-
-# RAID CERO IMAGEN
-** RAID 0: Máximo Rendimiento (Sin Redundancia)
-#+BEGIN_EXPORT latex
-\centering
-\includegraphics[width=1\linewidth]{imagenes/raid_cero.png}
-#+END_EXPORT
-
-# RAID UNO
-** RAID 1 (Mirronring/Espejo)
-La redundancia se logra \textcolor{blue}{duplicando todos los lados.} \\
-\textbf{Organización: }Cada franja lógica se proyecta en dos discos
-físicos separados (\textcolor{blue}{Disco espejo}). \\
-\vspace{0.5cm}
-\textbf{Aspectos positivos:} \\
-\hspace{0.3cm} \textbf{Lecturas: }Pueden ser
-servidas por cualquiera de los dos discos (se elige el de menor tiempo
-de búsqueda). \\
-\hspace{0.3cm} \textbf{Escrituras: }Se actualizan en paralelo en ambos
-discos. \textcolor{blue}{No hay "penalización en la escritura"} (a
-diferencia de niveles con paridad). \\
-\hspace{0.3cm} \textbf{Recuperación: } \textcolor{blue}{Sencilla}; si una unidad
-falla, los datos están disponibles en el espejo. \\
-
-#+BEGIN_EXPORT latex
-\begin{definition}
-\textbf{Desventaja: }El costo; requiere el doble de espacio de disco
-\end{definition}
-#+END_EXPORT
-
-# RAID UNO IMAGEN
-** RAID 1 (Mirronring/Espejo)
-#+BEGIN_EXPORT latex
-\centering
-\includegraphics[width=1\linewidth]{imagenes/raid_uno.png}
-#+END_EXPORT
-
-# RAID DOS
-** RAID 2 (Acceso paralelo con ECC)
-\textcolor{blue}{Acceso paralelo }(todos los discos participan en cada
-petición de E/S, **sincronizados**) \\
-\vspace{0.3cm}
-\textbf{Organización: }Tiras muy pequeñas (a menudo un único byte o
-palabra). Uso de \textcolor{código de correción de errores (ECC)},
-normalmente código Hamming. \\
-\vspace{0.3cm}
-\textbf{Funcionamiento:} \\
-Se calculan bits de corrección a partir de los datos de cada disco.\\
-Los bits de código se almacenan en discos de paridad dedicados. \\
-Permite corregir errores de un bit y detectar errores de dos bits
-instantáneamente.\\
-
-#+BEGIN_EXPORT latex
-\begin{definition}
-\textbf{Limitación: }Es una solución costosa y excesiva para discos modernos de alta fiabilidad. No se implementa comercionalmente.
-\end{definition}
-#+END_EXPORT
-
-# RAID DOS IMAGEN
-** RAID 2 (Acceso paralelo con ECC)
-#+BEGIN_EXPORT latex
-\centering
-\includegraphics[width=1\linewidth]{imagenes/raid_dos.png}
-#+END_EXPORT
-
-# RAID TRES
-** RAID 3 (Paridad dedicada)
-**Acceso paralelo** con un solo disco de paridad (sin importar el
-número de discos de datos). \\
-\textbf{Organización: }Datos divididos en tiras muy pequeñas. El disco
-de paridad almacena el resultado de la función
-\textcolor{blue}{función XOR} de los datos. \\
-#+BEGIN_EXPORT latex
-\centering
-\includegraphics[width=1\linewidth]{imagenes/raid_tres_uno.png}
-#+END_EXPORT
-
-# RAID TRES PARTE DOS
-** RAID 3 (Paridad dedicada)
-\textbf{Redundancia y Recuperación:} \\
-\(X4(i)=X3(i) \oplus X2(i) \oplus X1(i) \opus X0(i)\) \\
-\textcolor{blue}{Recuperación ante fallos: }Si una unidad (ej. X1)
-falla, se regenera con el resto.\\
-\(X1(i)=X4(i) \oplus X3(i) \oplus X2(i) \opus X0(i)\) \\
-#+BEGIN_EXPORT latex
-\centering
-\includegraphics[width=1\linewidth]{imagenes/raid_tres_dos.png}
-#+END_EXPORT
-
-# RAID TRES PARTE TRES
-** RAID 3 (Paridad dedicada)
-\textbf{Prestaciones y Rendimiento: }\\
-\hspace{0.3cm}\textbf{Alta velocidad: }Al usar tiras pequeñas,
-cualquier petición de E/S implica una transferencia paralela desde
-todos los discos. \\
-\hspace{0.3cm}\textbf{Mejora notable: }Especialmente útil para grandes
-transferencias de datos. \\
-\hspace{0.3cm}\textbf{Limitación crítica: }Solo se puede ejecutar una
-petición de E/S a la vez. \\
-\hspace{0.3cm}\textbf{Entorno de transacciones: }El rendimiento sufre
-debido a la limitación de peticiones recurrentes.\\
-#+BEGIN_EXPORT latex
-\centering
-\includegraphics[width=0.7\linewidth]{imagenes/raid_tres_tres.png}
-#+END_EXPORT
-
-# PARTE CHRISTIAN
-# RAID 4
-** RAID 4
-- \textbf{¿Qué es?: }Un arreglo de discos de acceso independiente que
-  utiliza un esquema de paridad dedicada.
-- \textbf{Funcionamiento: }Divide los datos en bloques grandes
-  distribuidos en varios discos, y calcula matemáticamente la paridad
-  (XOR), almacenándola toda en un único disco físico exclusivo.
-- \textbf{Ventajas: }Excelente rendimiento para lecturas grandes y
-  simultáneas.
-- \textbf{Desventajas: }Velocidad muy baja en la transacción y
-  transferencia de escritura.
-
-#+BEGIN_EXPORT latex
-\centering
-\includegraphics[width=0.7\linewidth]{imagenes/raid_cuatro.png}
-#+END_EXPORT
-
-# RAID CINCO
-** RAID 5
-- \textbf{¿Qué es?: }Un arreglo de discos con división de datos y
-  paridad distribuida.
-- \textbf{Funcionamiento: }Distribuye los bloques de paridad a lo
-  largo de todos los discos usando un esquema cíclico. Requiere mínimo
-  3 discos.
-- \textbf{Ventajas: }Mayor velocidad de transacción de datos y buena
-  velocidad de transferencia.
-- \textbf{Desventajas: }Complejidad en el diseño del controlador de
-  hardware.
-
-#+BEGIN_EXPORT latex
-\centering
-\includegraphics[width=0.7\linewidth]{imagenes/raid_cinco.png}
-#+END_EXPORT
-
-# RAID SEIS
-** RAID 6
-- \textbf{¿Qué es?: }Es un esquema de división de datos equipado con
-  doble paridad para ofrecer una disponibilidad extremadamente alta.
-- \textbf{Funcionamiento: }Realiza dos cálculos de paridad distintos y
-  los almacena en bloques separados, requiriendo en total N+2 discos.
-- \textbf{Ventajas: }Tolerancia a fallos extrema.
-- \textbf{Desventajas: }Sobrecarga del controlador para calcular las
-  direcciones de paridad.
-
-#+BEGIN_EXPORT latex
-\centering
-\includegraphics[width=0.9\linewidth]{imagenes/raid_seis.png}
-#+END_EXPORT
-
-# RAID 10
-** RAID 10 (RAID 1+0)
-- \textbf{¿Qué es?: }Una arquitectura anidada que une lo mejor de la
-  división de datos RAID 0 y el espejado RAID 1.
-- \textbf{Funcionamiento: }Agrupa los discos en parejas para crear
-  clones exactos. Luego, toma los datos y los divide a través de estas
-  parejas.
-- \textbf{Ventajas: }Rendimiento máximo de hardware. Tolerancia a
-  fallos y no tiene penalización de escritura por cálculos de paridad.
-- \textbf{Desventajas: }Costo sumamente elevado y baja eficiencia.
-
-#+BEGIN_EXPORT latex
-\centering
-\includegraphics[width=0.3\linewidth]{imagenes/raid_diez.png}
+\begin{center}
+\includegraphics[width=0.55\linewidth]{images/AltaDefinicion.png}
+\end{center}
 #+END_EXPORT
